@@ -1,0 +1,94 @@
+list of TODOs
+
+# list of actors
+# list of goals each actor has 
+# list the stakeholders
+# list of business rules
+
+
+Warm up with a usage narrative:
+
+    A usage narrative:
+
+        It's a situated example (an example in a particular living situation) of the use case in operation
+            - a single, highly specific example of an actor using the system
+            - it's not a use case
+
+        It will help to:
+            - envision the system in use
+            - warm up before writing a use case, to work through the details
+            - set the stage for more detailed and generalized descriptions of the requirements
+            - anchor the use case 
+                + the use case itself will be a formula (dried up form of the usage narrative)
+
+
+    Sketch out a vignette:
+        i.e. a few moments in the day of the life of one of the actors
+
+        # invent a fictional but specific actor (complete with a name etc.)
+        # briefly capture the mental state state of that person
+            - why he wants what he wants
+            - what conditions drive him to act as he does
+        # don't write much
+        # capture how the world works, from the start of the situation to the end
+        # be brief so the reader can get the story at a glance
+        # emotional content (details and motives) are important 
+
+
+
+Write use cases
+
+    # low-precision (so details are added later)
+        it's important to get a list of correct[!] use cases
+    # not using very many words
+    # name the use cases as "user goals"
+        the list shows/announces what the new system will be/do
+            reveals the scope of the system, its purpose in life
+            becomes a communication device between the different stakeholders on the project
+            is a framework to which to attach
+                complexity
+                cost
+                timing 
+                status
+
+    # Show the list to the stakeholders / users of the system
+    # have the users fine-tune or reject the stories
+        which functions get built first
+        how the teams are to be set up
+
+
+
+    SAVE YOUR ENERGY! STRONGLY RECOMMENDED ORDER:
+        Four stages/levels of precision in writing use cases
+
+        1) Actors and goals (easy)
+
+            # list what actors and which of their goals the system will support
+            # review  this list for accuraccy and completeness
+            # prioritize and assign goals to teams and releases
+
+        2) Use case brief or main success scenario (easy)
+
+            # sketch the main success scenario for the use cases you have selected to pursue
+            # review them in draft form to make sure that the system really is delivering the interests of the stakeholders you care about
+
+        3) Failure conditions (harder)
+
+            # complete the main success scenario
+            # do failure brainstorming
+                - draft a list of all the failures that can occur
+                - make sure it's complete
+
+
+        4)  failure handlings (tricky, tiring, surprising work)
+                work out and write how the system must handle failures / respond to each failure
+                    Surprise! as you discover
+                        - an obscure business rule
+                        - a new actor
+                        - a new stakeholder
+                        - a new goal
+
+
+
+
+
