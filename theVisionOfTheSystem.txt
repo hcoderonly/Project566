@@ -9,3 +9,41 @@ Effective vision will:
             we have effective communication among stakeholders
 
 
+
+PRODUCT POSITION STATEMENT
+
+It is the one good reason why we are building the system
+It is the key element of the vision
+It reminds us about all of the things we must consider when we establish a vision for our system
+it gives everyone of us a common high-level understanding of what our system does.
+
+Problem statement.
+
+    The problem of 
+
+        lack of medium to 
+        save and provide language translations for 
+        such volatile but self-existent units of speech as 
+        winged words and phrases that are present in different languages and cultures
+        and that are significant carriers of the contemporary culture of different people groups  
+
+    affects
+
+        mutual understanding between people of different nations and cultures
+
+    the impact of which is
+
+        language and culture barriers 
+            hampering mutual understanding between nations and cultures and
+            contributing to inter-racial, inter-ethnic and inter-cultural tensions in the society.
+
+    A successful solution would
+
+        help overcome the language and culture barriers and shocks
+        by providing an open-end[?] online public database for the continuous process of 
+
+            (1) saving winged words from different languages and cultures
+            (2) providing adequate translations for the winged words into different languages
+            (3) querying the entries while doing translation work or studying
+
+
