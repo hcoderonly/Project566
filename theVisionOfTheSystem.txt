@@ -1,0 +1,11 @@
+Effective vision will:
+    provide a shared understanding of the problem to be solved;
+    unify the various stakeholder perspectives:
+        in order to achieve a truly collaborative and cooperative working environment when:
+            stakeholder representatives are actively involved in the project
+            we can assess whether real progress is being made
+            we can manage the project scope
+            we can validate the decisions made in the day-to-day running of the project
+            we have effective communication among stakeholders
+
+
