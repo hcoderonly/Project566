@@ -1,0 +1,46 @@
+Stakeholders
+
+    Human
+
+        Users
+            technology adopters
+            standard users
+                day-to-day users
+                using queries
+                management
+                executives
+
+        Sponsors
+
+            who pay for the development of system
+                business managers
+                investors
+                dept heads
+                "champions"
+
+        Developers
+
+            project leader
+            system analysts
+            programmers
+            opertaions staff
+            test anaylists and programmers QA
+            implementation staff
+            maintenance staff
+
+        Authorities
+
+            ministries
+            technical experts
+            domain experts
+
+        Customers
+
+            those who do business with the company
+
+    Non-Human
+
+        non-human users
+        mechanical devices
+        other business areas
+        other systems
