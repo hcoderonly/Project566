@@ -1,0 +1,63 @@
+Main Success Scenario
+
+Igor
+
+    Igor is a translator who works with 2 languages: Russian and English.
+    His job is translating the text of the film The Groundhog Day. He comes across the scene where a character reads 4 lines from a poem.
+    Igor doesn't know this poem. 
+    He goes to the Winged Word Master and searches for a Russian translation of the English lines he hears in the movie.
+    The system doesn't have a Russian translation.
+
+    Now, Igor is a good translator but like most translators he is not a literary translator. Therefore he has three choices: 
+        1) to try hard and do what he has no training for - to translate the poetry himself,
+        2) to make a prose translation
+        3) to do a research and find the Russian literary translation of the poem and take the lines from there.
+    Igor decides to do option 3. 
+    He does a research: 
+        Step 1: he googles a few lines from the poem and finds the source of the lines:
+            The Lay of the Last Minstrel by Sir Walter Scott (1771-1832).
+                The wretch, concentred all in self,
+                Living, shall forfeit fair renown,
+                And, doubly dying, shall go down
+                To the vile dust from whence he sprung,
+                Unwept, unhonored , and unsung.
+        Step 2: He googles a Russian literary translation of the poem.
+        Step 3: He finds the best translation and picks the 4 lines from there.
+
+    Next he comes to the Winged Word Master and indicates that he wishes to create a new entry.
+    The system replies that in order to create a new entry he must first register.
+    Igor registeres, and starts to create a new entry.
+    He creates a new entry and saves it and now other translators can see the research work done by Igor.
+
+Vladimir
+
+    Vladimir is another translator. He is creating Russian subtitles for a British film where one of the characters says in a funny voice: "My momma always said, Life was like a box of chocolates. You never know what you gonna get". Everyone starts laughing but Vladimir doesn't know why this line had this comic effect on everyone however it is clear to him that this was a quote from somewhere so he goes to Winged Word Master and searches for the Russian translation of the English phrase.
+    He finds an entry created by another user that has the Russian translation of the phrase. He finds that this phrase is from the movie "Forrest Gump" and sees the translation is taken from the official Russian translation of the movie. He takes the phrase from the Winged Word Master and he is sure that the Russian viewers will remember the quote from the movie and it will have the same comic effect on them as it does on the English audience.
+
+Viktor
+
+    Viktor is also interested in winged words in English and Russian.
+    He comes to the Winged Words Master and wants to search for the entries the system has.
+    He indicates the pair of languages he is interested in - English and Russian - and the period in which he wants to see the entries - past day, past week, or past month. 
+    He chooses "past week" and sees a list of English-Russian entries created for the past week.
+
+    He wants to receive a list like that regularly so he goes to the area where he can subsribe to the mailing list. He indicates the pair of languages he is interested in and the email frequency: daily, weekly, monthly.
+
+Sergey
+
+    He speaks 3 languages: English, Russian, and German.
+    He would like to receive daily email notifications about new entries made in those languages, in any of the available 4 combinations:
+    English - Russian - German
+    English - German
+    Russian - German
+    English - Russian
+
+    He indicates that he is interested in 3 languages and subscribes to a daily email notifications.
+
+Yuri
+
+    Yuri is a Russian-French translator
+    He is searching Winged Word Master for a Russian translation of a quote from a French book. 
+    He finds that there already exists an entry created by some other user.
+    However, he is sure this translation can be improved. He downvotes the translation. 
+    He can not edit the existing translation but he can add his own translation and hope that future users will upvote his translation.
