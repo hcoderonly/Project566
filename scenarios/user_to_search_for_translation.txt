@@ -1,0 +1,10 @@
+v1
+
+User would like to search for a translation.
+
+User has a phrase that he would like to find a translation for.
+User requests WWM to allow him to enter a search phrase.
+WWM provides him with a place to enter his search phrase.
+User enters the search phrase and chooses to start the search.
+WWM makes the search.
+WWM finds the translation set and displays it to the user.
