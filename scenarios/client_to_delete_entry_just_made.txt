@@ -1,0 +1,10 @@
+v1
+Scenario: Client would like to delete the entry he just made
+
+Client decides to delete the entry he has just made.
+Client picks the entry and requests WWM to allow him to delete it.
+WWM asks Client to confirm deleting.
+Client confirms deleting.
+WWM deletes the entry.
+WWM displays the result.
+
