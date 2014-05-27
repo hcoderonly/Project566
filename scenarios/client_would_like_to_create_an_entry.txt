@@ -1,0 +1,18 @@
+v1
+
+A client - Igor - would like to create a new entry in the WWM. 
+
+Client has 2 pieces of information: a phrase in source language (SL) and its translation in target language (TL).
+Client will ask System to allow him to create an entry.
+System will provide Client with ... to receive his phrases:
+    an area for the phrase in SL
+    an area for the phrase in TL
+System will ask Client to confirm if the phrases he entered are OK:
+    do a spell check
+    check if meaning is correct
+    TL and SL are correctly set
+Client confirms.
+System saves the entry.
+System displays the result of the entry for Client to see.
+
+//Possible scenario: Client would like to edit the entry he has just made.
