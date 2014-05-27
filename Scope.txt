@@ -1,0 +1,60 @@
+Scope
+
+12:45 - 2:45
+
+Langunages : En, Ru, Manadrin(JQuery)
+
+Features: 
+
+    User Types
+        : unregistered (only search)
+        : registered (search + add + edit)
+        : admin (CRUD)
+
+    email subscription/notification/
+    comments for translations
+    Author's profile
+    Translations Sort: Input system
+    Chronological by default
+
+Version Control: Github
+
+Programming Languages: PHP, JQuery/Javascript
+                       HTML, CSS, MySQL
+
+
+
+
+ Wish List
+
+    R -> L Support
+    Rating for users
+    Rating for translations
+    auto complete while searching
+    Notification panel
+    Comments notification
+    favourite for registered user
+    Internationlization (i10n) 
+
+Outcomes
+
+    Search any translating API-Google
+    Bridge Extention
+    Spelling API
+
+
+
+
+User Cases
+
+    Search for a phrase
+    User wants to register
+    User wants to create an entry
+    
+Main Success Scenario 
+
+
+1. Register
+2. Search 
+3. Create & Edit
+4. Can we use Goole Translation
