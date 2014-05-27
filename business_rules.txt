@@ -1,0 +1,15 @@
+// the business rules must talk about principles in definite measurable terms
+
+BR001 - The system administrator role must have access to all the four basic functions of persistent storage (CRUD).
+
+BR002 - The registered user role must have access to functions "create", "retrieve", and "update".
+
+BR003 - The unregistered user role must have access only to "retrieve".
+
+BR004 - Every translation must must have a comments section.
+
+BR005 - Translations must be chronologically sorted
+
+
+
+    
