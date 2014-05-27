@@ -1,3 +1,5 @@
+v2
+/*
 Effective vision will:
     provide a shared understanding of the problem to be solved;
     unify the various stakeholder perspectives:
@@ -7,7 +9,7 @@ Effective vision will:
             we can manage the project scope
             we can validate the decisions made in the day-to-day running of the project
             we have effective communication among stakeholders
-
+*/
 
 SYSTEM VISION 
 
@@ -33,11 +35,12 @@ SYSTEM VISION
 
 
 PRODUCT POSITION STATEMENT
-
+/*
 It is the one good reason why we are building the system
 It is the key element of the vision
 It reminds us about all of the things we must consider when we establish a vision for our system
 it gives everyone of us a common high-level understanding of what our system does.
+*/
 
 Problem statement.
 
