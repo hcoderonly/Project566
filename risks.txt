@@ -1,0 +1,20 @@
+/* 
+    what could happen
+*/
+
+1. a member loses their machine (needs repair or get new one)
+    solution: 
+
+2. a member drops out (illness or leaves)
+    solution: 
+
+3. government interference
+
+4. ready project isn't used
+    solution: populate with data
+
+5. dependencies get upgraded
+
+6. loss of data on the server (hacker or force majeur)
+
+7. 
