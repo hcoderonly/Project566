@@ -10,6 +10,6 @@ BR004 - Every translation must must have a comments section.
 
 BR005 - Translations must be chronologically sorted
 
-:)
+--
 
     
