@@ -1,4 +1,19 @@
-// to be added
+--By Linpei Fan
 
 v1
+
+A user click on "Register" button to register in system.
+
+Then the user goes to the registration form, and fills up some personal information, such as
+
+	- username
+	- password
+	- email
+	- languages he/she intested in
+	- some optional information, like name, gender, country, professional area and so
+
+Then click "Submit" button, the user will become a registered user.
+
+The registered use will automaticall receive the notification email regarding the new entries in the languages that he/she
+interested in
 
