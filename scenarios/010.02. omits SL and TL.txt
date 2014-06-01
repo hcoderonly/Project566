@@ -1,0 +1,19 @@
+S#010.02. omits SL and TL
+same as above.
+User: 
+    Specifies
+        A search phrase
+    Omits
+        source language of the search phrase
+        target language(s) of translation(s)
+    Commands to start search
+System: 
+    Notifies the user that 
+        he omitted the source language of the search phrase 
+        he omitted the target language(s) of the translation(s)
+        the system will 
+            attempt to detect the source language of the search phrase
+            search all the database for the translations in all the available languages
+    Detects the source language of the search phrase // IF FAIL
+    Searches for translations in all the available languages 
+    Returns the search result

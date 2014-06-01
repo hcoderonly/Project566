@@ -1,0 +1,15 @@
+010.04. 
+
+same as above.
+User: 
+    Specifies 
+        the search phrase
+        one TL for translations
+    Omits
+        the SL of the search phrase
+System: 
+    Notifies the user that 
+        he omitted the SL of the search phrase 
+        the system will try to detect the language of the search phrase
+    Searches for translations in the specified TLs // If none found?
+    Returns the search result
