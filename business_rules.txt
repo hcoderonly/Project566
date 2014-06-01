@@ -10,6 +10,21 @@ BR004 - Every translation must must have a comments section.
 
 BR005 - Translations must be chronologically sorted
 
+BR006 - The registered user receives the notification emails regarding the new entries in the languages that he/she
+	interested in by default for a period of time.
+
+BR007 - The unregisted user can subsribe/unsubsribe the notification emails.
+
+BR008 - The registered user can unsubribe the notification emails.
+
+BR009 - The system use the tranlation API, foreign language input API and spell checking API, those APIs are free available
+	for developer.
+
+BR010 - The interface language of the system is English. 
+
+BR011 - At the first stage, English, Russian and Chinese Simplify are the available languages for both source language 
+	and target language. 
+
 
 
     
