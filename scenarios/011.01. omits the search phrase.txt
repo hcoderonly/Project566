@@ -1,0 +1,13 @@
+S#011.01. The user omits the search phrase
+
+Same as above
+
+User: 
+    Specifies: 
+        the source language of the phrase
+        more than one TL for translation
+    Omits: 
+        the search phrase itself 
+    commands to start search
+System: 
+    Returns an error message that notifies the user that he omitted the search phrase

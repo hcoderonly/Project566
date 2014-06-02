@@ -1,0 +1,37 @@
+User wants to create an entry
+
+same as in 012.
+
+User:
+
+    Specifies that
+
+        he has an original phrase with a translation in a TL
+            e.g. 1) the original English text "Happy Birthday Song"
+                 2) the Russian text of the song
+
+System:
+
+    Asks the user to specify:
+
+        the OL in which to create the new entry for the original phrase (e.g. English) 
+            // if none
+        the text of the phrase in the OL (like the text of the "Happy Birthday" song) // if none
+
+    Makes a search of the db in the OL (here: English) to see 
+
+        whether an entry with the same text already exists in the database. // if yes/no
+
+        the SL for the translaton of the phrase
+        the text of the phrase in the TL (like the Russian translation of the "Happy Borthday" song)
+
+/////////////////////////////////
+User:
+
+    Specifies:
+
+        All the required information.
+
+System
+
+
