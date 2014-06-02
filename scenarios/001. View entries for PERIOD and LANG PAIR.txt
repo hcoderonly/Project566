@@ -1,0 +1,19 @@
+User would like to view all the entries made in 
+    (a) a specified time period for 
+    (b) a specific language pair.
+
+
+1. User requests WWM to show him a list of entries for (a) for (b).
+    .1 System asks the user to specify (a) and (b) 
+        .1 User specifies both (a) and (b)
+            .1 Commands to compile the list.
+            .2 System makes a search and displays the list to the user.
+        .2 User specifies (a), omits (b)
+            .1 
+            .2
+        .3 User omits (a), specifies (b)
+            .1 
+            .2
+        .4 User omits both (a) and (b)
+            .1 
+            .2

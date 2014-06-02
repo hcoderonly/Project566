@@ -1,0 +1,26 @@
+(started by Linpei Fan)
+
+User wants to register in the system
+    .1 System asks User to give 
+        A: username
+        B: password
+        C: email address
+        D: language(s) User is interested in
+        E: Optional info (like name, gender, country, professional area, etc)
+        
+        .1 User omits at least one of A-D, omits E
+            .1 System notifies and redisplays
+        .2 User omits at least one of A-D, gives E
+            .1 System notifies and redisplays
+        .3 User gives A-D, omits E
+            .1 System attempts to create an account
+                .1 Create succeeds
+                    .1 System sends an email notification
+                .2 Create fails
+                    .1 System fails 
+        .4 User gives all: A-E
+            .1 System attempts to create an account 
+                .1 Create succeeds
+                    .1 System sends an email notification
+                .2 Create fails
+                    .1 System fails 

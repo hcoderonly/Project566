@@ -1,9 +1,0 @@
-v1
-User would like to subscribe to mailing list for >2 languages
-
-User requests WWM to let him subscribe to a mailing list to receive notifications about new entries
-WWM asks user to specify
-    the entries in what languages the user is interested in receiving emails
-    how often User wants to receive the emails
-User specifies both the pieces of information and asks to add him to the list
-WWM adds user to the list and displays confirmation message

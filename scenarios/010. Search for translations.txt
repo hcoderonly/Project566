@@ -1,0 +1,44 @@
+10 User wants to make a search for a translation
+
+    .1 System asks the user to specify C, D, E:
+        C: the search phrase
+        D: the source language of the search phrase
+        E: the target language(s) // for more than one TL -- use a checkbox
+
+        .1 User specifies all: C, D, E
+            .1 System makes a search
+            .2 System returns result
+
+        .2 User omits C, specifies D and E
+            .1 System notifies C is omitted 
+
+        .3 User specifies C, omits D and E
+            .1 System notifies D and E are ommitted
+            .2 System attempts to detect D
+                .1 detect succeeds
+                    .1 
+                .2 detect fails
+            .3 System makes a search of the database for the translations in all available D's
+                .1 finds match(es)
+                .2 finds 0 matches
+
+        .4 User specifies C and D, omits E
+            .1 System notifies E is ommitted
+            .2 System asks the user to select if he wants to search in ALL languages
+                .1 User wants to search in all languages
+                    .1 System makes a search in all languages
+                        .1 Search succeeds
+                        .2 Search fails
+
+                .2 User specifies a language to search in
+                    .1 System makes a search in the TL specified
+
+        .5 User specifies C and E, omits D
+            .1 System notifies D is omitted
+            .2 System attempts to detect D
+                .1 detect succeeds
+                    .1 System ...
+                .2 detect fails
+
+
+        

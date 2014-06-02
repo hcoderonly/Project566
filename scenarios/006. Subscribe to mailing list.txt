@@ -1,0 +1,14 @@
+User would like to subscribe to a mailing list
+
+1. User requests the system to let him subscribe to a mailing list to receive notifications about new entries
+    .1 System asks user to specify A and B
+        A: the language(s) for the entries to receive in emails
+        B: email frequency - how often User wants to receive the emails
+        
+        .1 User omits both A and B
+        .2 User omits A, gives B
+        .3 User gives A, omits B
+        .4 User gives both A and B
+            .1 System adds user to the list
+            .2 System notifies of success
+
