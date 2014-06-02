@@ -1,0 +1,5 @@
+==========================================
+user omits both
+
+    a) the OL in which to create the new entry for the original phrase (e.g. English)
+    b) the text of the phrase in the OL (like the text of the "Happy Birthday" song) 

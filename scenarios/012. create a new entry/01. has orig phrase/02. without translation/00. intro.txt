@@ -1,0 +1,27 @@
+User wants to create an entry
+------------------------------------------------------------------------------
+User: 
+    asks the system to let him create an entry
+
+System:
+    asks the user if he has:
+
+        1) an original phrase (like the english text of the "Happy Birthday" song)
+            1) and a Russian translation
+            2) no translation
+        2) a translation of a phrase, without the text in the original language
+        3) a phrase which is unknown a translation or the original
+------------------------------------------------------------------------------
+User:
+
+    Specifies that
+
+        he has an original phrase BUT NO translation in a TL
+            e.g. the original English text "Happy Birthday Song" BUT without an translation
+System:
+
+    Asks the user to specify:
+
+        a) the OL in which to create the new entry for the original phrase (e.g. English)
+        b) the text of the phrase in the OL (like the text of the "Happy Birthday" song) 
+=======================================================================

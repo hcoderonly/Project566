@@ -1,0 +1,10 @@
+
+User:
+    specifies both:
+        the time period
+        the language pair
+    commands to compile the list.
+
+System:
+    makes a search
+    displays the list to the user.

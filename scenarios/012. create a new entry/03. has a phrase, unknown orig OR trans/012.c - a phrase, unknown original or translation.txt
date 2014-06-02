@@ -13,12 +13,7 @@ System:
         the OL in which to create the new entry for the original phrase (e.g. English) // if none
         the text of the phrase in the OL (like the text of the "Happy Birthday" song) // if none
 
-    Makes a search of the db in the OL (here: English) to see 
 
-        whether an entry with the same text already exists in the database. // if yes/no
-
-        the SL for the translaton of the phrase
-        the text of the phrase in the TL (like the Russian translation of the "Happy Borthday" song)
 
 User:
 

@@ -1,0 +1,14 @@
+User:
+
+    specifies both
+
+        a) the OL in which to create the new entry for the phrase (e.g. English)
+        b) the text of the phrase in the OL (like the text of the "Are you sleeping" song)
+System:
+    
+    Makes a search of the db in the OL (here: English) to see 
+
+        whether an entry with the same text already exists in the database. // if yes/no
+
+        the SL for the translaton of the phrase
+        the text of the phrase in the TL (like the Russian translation of the "Happy Borthday" song)
