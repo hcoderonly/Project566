@@ -1,8 +1,0 @@
-Client sees 1 or more errors in the entry he has just made.
-Client picks the entry and requests WWM to allow him to edit it.
-WWM opens the entry and allows Client to edit both the TL text and the SL text.
-Client edits the entry and chooses to save it.
-WWM asks Client to confirm saving.
-Client confirms saving.
-WWM saves the entry.
-WWM displays the result.

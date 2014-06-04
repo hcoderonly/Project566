@@ -1,0 +1,35 @@
+User would like to subscribe to a mailing list 
+    Info:         
+        A: the language(s) for the entries to receive in emails
+        B: email frequency - how often User wants to receive the emails
+
+1. User asks the system to let him subscribe to a mailing list to receive notifications about new entries
+
+    .1 System asks user to specify A and B  // #1      
+        .1 User omits both A and B
+            .1 System notifies A and B are omitted
+            .2 System loops back to #1
+        .2 User omits A, gives B
+            .1 System notifies A is omitted // #2
+            .2 System asks user to give A
+                .1 User omits A
+                    .1 System loops back to #2
+                .2 User gives A
+                    .1 System acts as in #3
+                .3 User aborts
+                    .1 System ??? 
+        .3 User gives A, omits B
+            .1 System notifies B is omitted // #4
+            .2 System asks user to give B
+                .1 User omits B
+                    .1 System loops back to #4
+                .2 User gives B
+                    .1 System acts as in #3
+                .3 User aborts
+                    .1 System ??? 
+        .4 User gives both A and B // #3
+            .1 System adds user to the list
+            .2 System notifies of success
+        .5 User aborts
+            .1 System ???
+

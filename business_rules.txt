@@ -10,6 +10,7 @@ BR004 - Every translation must must have a comments section.
 
 BR005 - Translations must be chronologically sorted
 
+
 BR006 - The registered user receives the notification emails regarding the new entries in the languages that he/she
 	interested in by default for a period of time.
 
@@ -17,14 +18,35 @@ BR007 - The unregisted user can subsribe/unsubsribe the notification emails.
 
 BR008 - The registered user can unsubribe the notification emails.
 
-BR009 - The system use the tranlation API, foreign language input API and spell checking API, those APIs are free available
-	for developer.
+BR009 - The system use the tranlation API, foreign language input API and spell checking API, those APIs are free available for developer.
 
 BR010 - The interface language of the system is English. 
 
 BR011 - At the first stage, English, Russian and Chinese Simplify are the available languages for both source language 
 	and target language. 
 
+BR012 - In order to make a search for translations the user must specify at least the phrase itself.
 
+BR013 - The user can make a search for translations in one or more TL's (target languages)
 
-    
+BR014 - In order to login the user must provide a valid email and password.
+
+BR015 - If a user creates an entry in a language for which the db doesn'tran have a table yet, the db must create it.
+
+BR016 - the source of the phrase will be:
+        - a work of literature
+            - novel
+            - poem
+            - drama
+            - short story
+            - novella
+        - performing arts
+            - music
+            - opera
+            - theater
+            - film
+        - public speaking
+            - speech
+            - lecture
+
+BR017 - Translations will be rated by the system of likes/upvotes-downvotes.

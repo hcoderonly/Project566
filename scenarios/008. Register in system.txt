@@ -1,0 +1,45 @@
+(started by Linpei Fan)
+
+Required Info:
+    A: username
+    B: password
+    C: email address
+    D: language(s) User is interested in
+    E: Optional info (like name, gender, country, professional area, etc)
+
+User wants to register in the system
+    .1 System asks User to give A-D, and optionally E
+
+        .1 User omits at least one of A-D, omits E
+            .1 System notifies X is omitted // #1
+            .2 System asks user to X
+                .1 User gives X
+                    .1 System attempts to create an account
+                .2 User omits X
+                    .1 System loops back to #1
+                .3 User aborts
+                    .1 System ???
+        .2 User omits at least one of A-D, gives E
+            .1 System notifies X is omitted // #2
+            .2 System asks user to X
+                .1 User gives X
+                    .1 System attempts to create an account
+                .2 User omits X
+                    .1 System loops back to #2
+                .3 User aborts
+                    .1 System ???
+        .3 User gives A-D, omits E
+            .1 System attempts to create an account
+                .1 Create succeeds
+                    .1 System attempts to send an email notification // #3
+                        .1 Send succeeds
+                        .2 Send fails
+                .2 Create fails
+                    .1 System notifies
+                    .2 
+        .4 User gives all: A-E
+            .1 System attempts to create an account 
+                .1 Create succeeds
+                    .1 System does #3
+                .2 Create fails
+                    .1 System notifies 
