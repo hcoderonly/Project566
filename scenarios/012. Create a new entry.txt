@@ -9,37 +9,37 @@
         D: a phrase which the user doesn't know a translation or the original
 ------------------------------------------------------------------
 1. User asks the system to let him create an entry
-    1. System asks the user to specify what information he has: A, B, C, or D
+    1. System asks the user to give what information he has: A, B, C, or D
 
-        .1 User specifies A:
-            .1 System asks the user to specify E and F:
+        .1 User gives A:
+            .1 System asks the user to give E and F:
                 E: the OL in which to create the new entry for the phrase e.g. English
                 F: the text of the phrase in the OL like the En text of the "Happy Birthday" song
 
-                .1 User specifies both E and F
+                .1 User gives both E and F
                     .1 System makes a search of the db in the OL here: English to see whether an entry with the same text already exists in the database. 
                         .1 system finds nothing
                         .2 system finds ...
-                .2 User specifies E, omits F
-                .3 User omits E, specifies F
+                .2 User gives E, omits F
+                .3 User omits E, gives F
                 .4 User omits both E and F
 
-        .2 User specifies B:
-            .1 System asks the user to specify E and F
-                .1 User specifies both E and F
-                .2 User specifies E, omits F
-                .3 User omits E, specifies F
+        .2 User gives B:
+            .1 System asks the user to give E and F
+                .1 User gives both E and F
+                .2 User gives E, omits F
+                .3 User omits E, gives F
                 .4 User omits both E and F
 
-        .3 User specifies C:
-            .1 System asks the user to specify E and F
-                .1 User specifies both E and F
+        .3 User gives C:
+            .1 System asks the user to give E and F
+                .1 User gives both E and F
                     .1 System checks to see if an entry with the same text already exists in the database.
                         .1 System finds a match
                         .2 System finds no match
 
-        .4 User specifies D:
-            .1 System asks the user to specify E and F
+        .4 User gives D:
+            .1 System asks the user to give E and F
                     .1 System checks to see if an entry with the same text already exists in the database.
                         .1 System finds a match
                         .2 System finds no match

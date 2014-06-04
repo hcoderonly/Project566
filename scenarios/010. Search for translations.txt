@@ -1,28 +1,57 @@
 10 User wants to make a search for a translation
 
-    .1 System asks the user to specify C, D, E:
+    Required info:
         C: the search phrase
         D: the source language of the search phrase
         E: the target language(s) // for more than one TL -- use a checkbox
 
-        .1 User specifies all: C, D, E
-            .1 System makes a search
-            .2 System returns result
+    .1 System asks the user to give C, D, E:
 
-        .2 User omits C, specifies D and E
-            .1 System notifies C is omitted 
+        .1 User gives all: C, D, E // #1
+            .1 System attempts to make a search
+                .1 search succeeds
+                    .1 System notifies
+                .2 search fails
+                    .1 System notifies            
 
-        .3 User specifies C, omits D and E
+        .2 User omits C, gives D and E
+            .1 System notifies C is omitted
+            .2 System asks to give C // #2
+                .1 User gives C
+                    .1 System acts as in #1
+                .2 User omits C
+                    .1 System loops back to #2
+                .3 User aborts
+                    .1 System ???
+
+        .3 User gives C, omits D and E
             .1 System notifies D and E are ommitted
             .2 System attempts to detect D
-                .1 detect succeeds
-                    .1 
-                .2 detect fails
-            .3 System makes a search of the database for the translations in all available D's
+                .1 D detect succeeds
+                    .1 System notifies D is detected
+                    .2 System offers a search in ALL available TL's
+                        .1 User agrees
+                            .1 System tries a search in all available TL's
+                        .2 User disagrees
+                            .1 System asks user to give E // #3
+                                .1 User gives E
+                                    .1 System tries a search in E
+                                        .1 Search succeeds
+                                        .2 Search fails
+                                .2 User omits E
+                                    .1 System loops back to #3
+                                .3 User aborts
+                                    .1 System ???
+                        .3 User aborts
+                            .1 System ???
+                .2 D detect fails
+                    .1 System notifies of D detect fail
+
+            .3 System tries a search in all available D's
                 .1 finds match(es)
                 .2 finds 0 matches
 
-        .4 User specifies C and D, omits E
+        .4 User gives C and D, omits E
             .1 System notifies E is ommitted
             .2 System asks the user to select if he wants to search in ALL languages
                 .1 User wants to search in all languages
@@ -30,15 +59,18 @@
                         .1 Search succeeds
                         .2 Search fails
 
-                .2 User specifies a language to search in
+                .2 User gives a language to search in
                     .1 System makes a search in the TL specified
 
-        .5 User specifies C and E, omits D
+        .5 User gives C and E, omits D
             .1 System notifies D is omitted
             .2 System attempts to detect D
                 .1 detect succeeds
                     .1 System ...
                 .2 detect fails
+
+        .6 User aborts
+            .1 System ???
 
 
         
