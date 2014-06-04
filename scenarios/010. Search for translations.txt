@@ -8,7 +8,7 @@
     .1 System asks the user to give C, D, E:
 
         .1 User gives all: C, D, E // #1
-            .1 System attempts to make a search
+            .1 System tries to make a search
                 .1 search succeeds
                     .1 System notifies
                 .2 search fails
@@ -26,7 +26,7 @@
 
         .3 User gives C, omits D and E
             .1 System notifies D and E are ommitted
-            .2 System attempts to detect D
+            .2 System tries to detect D
                 .1 D detect succeeds
                     .1 System notifies D is detected
                     .2 System offers a search in ALL available TL's
@@ -64,7 +64,7 @@
 
         .5 User gives C and E, omits D
             .1 System notifies D is omitted
-            .2 System attempts to detect D
+            .2 System tries to detect D
                 .1 detect succeeds
                     .1 System ...
                 .2 detect fails
@@ -73,4 +73,40 @@
             .1 System ???
 
 
-        
+       -------------------------------
+
+       (Not sure where this fits, you can think about it)
+
+
+    User would like to view all the entries made in 
+    A: a specified time period for 
+    B: a specific language pair.
+
+
+1. User asks system to show him a list of entries for A for B.
+    .1 System asks the user to give A and B
+    
+        .1 User gives both A and B
+            .1 System makes a search 
+            .2 System displays the list to the user.
+        .2 User gives A, omits B
+            .1 System notifies B is omitted // #1
+            .2 System asks user to give B
+                .1 User omits B 
+                    .1 System ... // loops back to #1
+                .2 User gives B
+                    .1 System tries to retrieve
+                        .1 Fail
+                        .2 Success
+                .3 User aborts
+                    .1 System ...
+
+        .3 User omits A, gives B
+            .1 
+            .2
+        .4 User omits both A and B
+            .1 
+            .2
+        .5 User aborts
+            .1 System ...
+ 

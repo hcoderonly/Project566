@@ -1,3 +1,18 @@
+Kamlesh
+
+
+User wants to login
+
+
+
+
+
+
+
+
+
+=======================================================
+
 012. User wants to create a new entry
     The possible information the user has are the following:
         A: an original phrase and a Russian translation
@@ -7,14 +22,14 @@
         C: a translation of a phrase, without the text in the original language
             e.g. the En text of the "Are you sleeping" song without a transl
         D: a phrase which the user doesn't know a translation or the original
+        E: the OL in which to create the new entry for the phrase e.g. English
+        F: the text of the phrase in the OL like the En text of the "Happy Birthday" song
 ------------------------------------------------------------------
 1. User asks the system to let him create an entry
     1. System asks the user to give what information he has: A, B, C, or D
 
         .1 User gives A:
             .1 System asks the user to give E and F:
-                E: the OL in which to create the new entry for the phrase e.g. English
-                F: the text of the phrase in the OL like the En text of the "Happy Birthday" song
 
                 .1 User gives both E and F
                     .1 System makes a search of the db in the OL here: English to see whether an entry with the same text already exists in the database. 
@@ -45,7 +60,7 @@
                         .2 System finds no match
 
 
-// think about this sub-scenario:
+// We need use this sub-scenario at some point:
     .1 user wants to edit the entry he has just made
         .1 User selects the entry to be edited
         .2 User asks the system to let him edit it
