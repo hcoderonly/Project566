@@ -50,4 +50,3 @@ BR016 - the source of the phrase will be:
             - lecture
 
 BR017 - Translations will be rated by the system of likes/upvotes-downvotes.
-
