@@ -1,35 +1,51 @@
-User would like to subscribe to a mailing list 
-    Info:         
-        A: the language(s) for the entries to receive in emails
-        B: email frequency - how often User wants to receive the emails
+(Linpei)
 
-1. User asks the system to let him subscribe to a mailing list to receive notifications about new entries
+Main function: Email Subscription / Unsubscription
 
-    .1 System asks user to specify A and B  // #1      
-        .1 User omits both A and B
-            .1 System notifies A and B are omitted
-            .2 System loops back to #1
-        .2 User omits A, gives B
-            .1 System notifies A is omitted // #2
-            .2 System asks user to give A
-                .1 User omits A
-                    .1 System loops back to #2
-                .2 User gives A
-                    .1 System acts as in #3
-                .3 User aborts
-                    .1 System ??? 
-        .3 User gives A, omits B
-            .1 System notifies B is omitted // #4
-            .2 System asks user to give B
-                .1 User omits B
-                    .1 System loops back to #4
-                .2 User gives B
-                    .1 System acts as in #3
-                .3 User aborts
-                    .1 System ??? 
-        .4 User gives both A and B // #3
-            .1 System adds user to the list
-            .2 System notifies of success
-        .5 User aborts
-            .1 System ???
+1. Subscribing the news letter
+    User needs to provide following information, which will be in a form.        
+        A: Email address user would like to use to receive the newsletter. (Required)
+        B: Preferred language(s) for the entries to receive in emails. (Required)
+        C: email frequency - how often User wants to receive the emails. (Bi-weekly is set by default.)
 
+    .1 User inputs the both of the required fields, which means email and preferred languages. Email frequency has the default value.
+
+        .1 All of the fields are valid 
+            .1 System saves users' information
+            .2 System shows the confirmation message. 
+ 
+        .2 At least one of required fields are invalid or blank
+            .1 System showed the error info and instructions next to the the input fields
+            .2 User re-enters the valid fields
+            .3 Go to #1
+
+        .3 Users abort subscribing
+            .1 System return to the previous page where the user is. 
+
+        .4 System fails / network problem / other reasons causing time-out
+            .1 Display error message.
+
+2. Unsubscribing the news letter
+    User needs to provide email which is valid and used to subscribe the news letter in Winged Words
+    .1 Unsubscribing from website
+        
+        .1 User needs to enter the email
+
+            .1 Both of the conditions are not met
+                .1 System shows error msg
+                .2 User re-enters email
+                .3 System goes to step 2.1.1
+
+            .2 Both of the conditions are met
+                .1 System removes this email from email list
+                .2 System pops up the confirmation msg
+
+        .2 User cancels unsubscribing
+            .1 System return to the previous page where the user is.
+
+        .3 System fails / network problem / other reasons causing time-out
+            .1 Display error message.
+
+    .2 Unsubscribing from email
+        .1 System removes this email from email list
+        .2 System directs user to a webpage showing the confirmation.
