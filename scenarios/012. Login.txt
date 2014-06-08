@@ -3,7 +3,41 @@ Kamlesh
 
 User wants to login
 
+Kamlesh's addition (June 6, 2014)
+    
+------------------------------------------------
+    Scenario: User trys to login into the system
 
+
+            User inputs username and password both
+                User inputs correct username and password
+                    User will be logged in
+                User inputs wrong username
+                    User will be asked to enter right username
+                User inputs wrong password
+                    User will be asked to enter right password
+            User inputs only username
+                User will be asked to enter the password
+            User inputs only password
+                User will be asked to enter the username
+            User inputs nothing
+                User will be asked to enter both
+
+        Scenario: User forgets the password and trys to recover it
+
+
+            User chooses to recover the password
+            User will be asked to enter the email address
+                User inputs the email address
+                    User inputs valid email address that is registered into the system
+                        System will send an email with an URL to recover the password
+                    User inputs unregistered email address
+                        User will be asked to register first             
+                User inputs nothing
+                    System will ask to give input 
+
+------------------------------------------------
+End of Kamlesh's Addition
 
 
 
