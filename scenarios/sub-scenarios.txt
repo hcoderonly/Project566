@@ -1,0 +1,17 @@
+Sub-scenarios
+v1
+
+#1 system tries a seach using C, D, E
+#2 system asks for C
+#3 system asks for E
+#4 system returns/displays the result of O
+#5 system returns/displays the result of N
+#6 system asks for B1
+#7 system tries a search using A, B1, B2
+#8 system asks for B2
+#9 system asks for A
+#10 system asks for A and B2
+#11 
+#12 system asks for A and B1
+#13
+#14 system asks for A and B1 and B2
