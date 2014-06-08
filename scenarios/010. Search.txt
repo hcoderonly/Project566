@@ -1,0 +1,236 @@
+Igor
+
+10 User wants to make a Search
+
+        Required data:
+
+            A: a given time period (past day/week/month)
+            B1: original language
+            B2: translation's target language
+            C: the search phrase
+            D: the source language of the search phrase
+            E: the target language(s) // for more than one TL -- use a checkbox
+            F: user's locale's language
+            
+            N: search without a search phrase (i.e. for entries in one language)
+                User asks a search for entries for A for B1 and B2.
+            O: search with a search phrase
+        Numbers used: 14, 15, 
+
+        .1 System asks user to pick N or O
+            .1 User picks N
+                .1 System asks the user to give A and B1 and B2 // #14
+
+                    .1 User omits A, B1, B2
+                        .1 System notifies A, B1, B2 are omitted
+                        .2 System loops back to #12
+                    
+                    .2 User omits A, B1, gives B2
+                        .1 System notifies A, B1 are omitted
+                            .1 System tries to detect F to use as B1
+                                .1 F detect fails
+                                    .1 System asks for A and B1 //#12
+                                        .1 User omits A, B1
+                                            .1 System loops to #12
+                                        .2 User omits A, gives B1
+                                            .1 System asks for A // #15
+                                                .1 User omits A
+                                                    .1 System loops to #15
+                                                .2 User gives A
+                                                    .1 System does #7
+                                .2 F detect succeeds
+                                    .1 System asks to pick L or M
+                                        .1 User picks L
+                                            .1 System asks for A // #16
+                                                .1 User omits A
+                                                    .1 System loops back to #16
+                                                .2 User gives A
+                                                    .1 System tries a search with A, F, B2 (does #7)
+                                                .3 User aborts
+                                        .2 User picks M
+                                        .3 User aborts
+
+                    .3 User omits A, gives B1, omits B2
+                        .1 System notifies A and B2 are omitted
+                        .2 System asks for A and B2 // #10
+                            .1 User omits A and B2
+                                .1 System loops to #10
+                            .2 User omits A, gives B2
+                                .1 System asks for A // #9
+                                    .1 User omits A
+                                        .1 System loops to #9                        
+                                    .2 User gives A
+                                        .1 System does #7
+                                    .3 User aborts                                 
+                            .3 User gives A, omits B2
+                                .1 System does #8
+                            .4 User gives A and B2
+                                .1 System does #7
+                            .5 User aborts
+                    
+                    .4 User omits A, gives B1 and B2
+                        .1 System does #9
+                    
+                    .5 User gives A, omits B1 and B2
+                        .1 System notifies B1 and B2 are omitted
+                        .2 System tries to detect F
+                            .1 F detect fails
+                            .2 F detect succeeds
+                                .2 System offers user to pick I, or J, or K
+                                    .1 User picks I
+                                        .1 System tries I
+                                            .1 Search fails
+                                            .2 Search succeeds
+                                    .2 User picks J
+                                        .1 System tries J
+                                            .1 Search fails
+                                            .2 Search succeeds
+                                    .3 User picks K
+                                        .1 System asks for B2 // #8
+                                            .1 User gives B2
+                                                .1 System does #7
+                                            .2 User omits B2
+                                                .1 System loops to #8
+                                            .3 User aborts
+                    
+                    .6 User gives A, omits B1, gives B2
+                        .1 System notifies B1 is omitted
+                        .2 System tries to detect F to use it as B1
+                            .1 F detect fails
+                                .1 System asks for B1 // #6
+                                    .1 User omits B1
+                                        .1 System loops back to #6
+                                    .2 User gives B1
+                                        .1 System does #7
+                                    .3 User aborts
+                            .2 F detect succeeds
+                                .1 System offers a search for entries for A with F as B1
+                                    .1 User accepts
+                                        .1 System tries a search using A and F as B1
+                                            .1 search succeeds
+                                                .1 System does #5
+                                            .2 search fails
+                                                .1 System notifies 
+                                                .2
+                                    .2 User rejects
+                                        .1 System does #6
+                    
+                    .7 User gives A, B1, omits B2
+                        .1 System notifies B2 is omitted
+                            .1 System offers to pick G or H or P or abort
+                                .1 User selects G
+                                    .1 System tries G
+                                        .1 search succeeds
+                                            .1 System notifies
+                                            .2 System does #5
+                                        .2 search fails
+                                            .1 System notifies
+                                            .2 
+
+                                .2 User selects H
+                                    .2 System tries H
+                                        .1 search succeeds
+                                            .1 System notifies
+                                            .2 System does #5
+                                        .2 search fails
+                                            .1 System notifies
+                                            .2 
+                                .3 User picks P
+                                    .1 System does #8
+                                .4 User aborts
+                                    .1 
+
+                    .8 User gives A, B1, and B2
+                        .1 System tries a search with A, B1, B2 // #7
+                            .1 search fails
+                                .1 System notifies
+                                .2 
+                            .2 search succeeds
+                                .1 System notifies
+                                .2 System displays result of N. // #5
+                    
+                    .9 User aborts
+                        .1 System ...
+
+            .2 User picks O
+                .1 System asks the user to give C, D, E:
+
+                    .1 User omits all: C, D, E
+
+                    .2 User omits C & D, gives E
+                        .1 System asks for C & D
+                            .1 User omits C and D
+                            .2 User omits C, gives D
+                            .3 User gives C, omits D
+                            .4 User gives C and D
+                            .5 User aborts
+                    
+                    .3 User omits C, gives D, omits E
+
+                    .4 User omits C, gives D and E
+                        .1 System notifies C is omitted
+                        .2 System asks for C // #2
+                            .1 User omits C
+                                .1 System loops back to #2
+                            .1 User gives C
+                                .1 System does #1
+                            .3 User aborts
+                                .1 System ???
+
+                    .5 User gives C, omits D and E
+                        .1 System notifies D and E are ommitted
+                        .2 System tries to detect D
+                            .1 D detect succeeds
+                                .1 System notifies D is detected
+                                .2 System offers a search in ALL available TL's
+                                    .1 User agrees
+                                        .1 System tries a search in all available TL's
+                                            .1 Search succeeds
+                                            .2 Search fails
+                                    .2 User disagrees
+                                        .1 System asks for E // #3
+                                            .1 User omits E
+                                                .1 System loops back to #3
+                                            .2 User gives E
+                                                .1 System tries a search in E
+                                                    .1 Search succeeds
+                                                    .2 Search fails
+                                            .3 User aborts
+                                                .1 System ???
+                                    .3 User aborts
+                                        .1 System ???
+                            .2 D detect fails
+                                .1 System notifies of D detect fail
+
+                        .3 System tries a search in all available D's
+                            .1 finds match(es)
+                            .2 finds 0 matches
+
+                    .6 User gives C, omits D, gives E
+                        .1 System notifies D is omitted
+                        .2 System tries to detect D
+                            .1 detect succeeds
+                                .1 System ...
+                            .2 detect fails
+
+                    .7 User gives C and D, omits E
+                        .1 System notifies E is ommitted
+                        .2 System asks the user to select if he wants to search in ALL languages
+                            .1 User wants to search in all languages
+                                .1 System makes a search in all languages
+                                    .1 Search succeeds
+                                    .2 Search fails
+
+                            .2 User gives a language to search in
+                                .1 System makes a search in the TL specified
+
+                    .8 User gives all: C, D, E 
+                        .1 System tries a search with C, D, E // #1
+                            .1 search fails
+                                .1 System notifies                              
+                            .2 search succeeds
+                                .1 System displays the result of O // #4
+                    
+                    .6 User aborts
+                        .1 System ???
+
