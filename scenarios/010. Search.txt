@@ -1,9 +1,16 @@
 Igor
-v3
+v4
 
 10 User wants to make a Search
 
-        .1 System asks user to pick N or O
+        .1 System tries to detect F
+
+            .1 F detect fails
+                F is not available
+            .2 F detect succeeds
+                F is available
+
+        .2 System asks user to pick N or O
 
             .1 User picks N
 
@@ -15,10 +22,13 @@ v3
                         .2 System loops back to #14
                     
                     .2 User omits A, B1, gives B2
-                        .1 System notifies A, B1 are omitted
-                            .1 System tries to detect F to use as B1 // the system can do this earlier???
 
-                                .1 F detect fails
+                        .1 System notifies A, B1 are omitted
+
+                            .1 System checks if it can use F as B1
+
+                                .1 F is available
+
                                     .1 System asks for A and B1 //#12
                                         .1 User omits A, B1
                                             .1 System loops to #12
@@ -29,23 +39,37 @@ v3
                                                 .2 User gives A
                                                     .1 System does #7
 
-                                .2 F detect succeeds
+                                .2 F is not available
+
                                     .1 System asks to pick L or M
+
                                         .1 User picks L
+
                                             .1 System asks for A // #9
+
                                                 .1 User omits A
                                                     .1 System loops back to #9
                                                 .2 User gives A
-                                                    .1 System tries a search with A, F, B2 (does #7)
+                                                    .1 System tries a search using A, F, B2 (does #7)
                                                 .3 User aborts
+
                                         .2 User picks M
+
+                                            .1 system does #10
+
                                         .3 User aborts
 
+                                            1. system returns to ...
+
                     .3 User omits A, gives B1, omits B2
+
                         .1 System notifies A and B2 are omitted
                         .2 System asks for A and B2 // #10
+
                             .1 User omits A and B2
+
                                 .1 System loops to #10
+
                             .2 User omits A, gives B2
                                 .1 System asks for A // #9
                                     .1 User omits A
@@ -53,10 +77,15 @@ v3
                                     .2 User gives A
                                         .1 System does #7
                                     .3 User aborts                                 
+
                             .3 User gives A, omits B2
+
                                 .1 System does #8
+
                             .4 User gives A and B2
+
                                 .1 System does #7
+
                             .5 User aborts
                     
                     .4 User omits A, gives B1 and B2
@@ -66,18 +95,21 @@ v3
                     .5 User gives A, omits B1 and B2
 
                         .1 System notifies B1 and B2 are omitted
-                        .2 System tries to detect F
-                            .1 F detect fails
-                            .2 F detect succeeds
-                                .2 System offers user to pick I, or J, or K
+                        .2 System checks if F is available
+                            .1 F is not available
+                            .2 F is available
+                                .2 System asks user to pick I, or J, or K
+
                                     .1 User picks I
                                         .1 System tries I
                                             .1 Search fails
                                             .2 Search succeeds
+
                                     .2 User picks J
                                         .1 System tries J
                                             .1 Search fails
                                             .2 Search succeeds
+
                                     .3 User picks K
                                         .1 System asks for B2 // #8
                                             .1 User gives B2
@@ -89,15 +121,15 @@ v3
                     .6 User gives A, omits B1, gives B2
 
                         .1 System notifies B1 is omitted
-                        .2 System tries to detect F to use it as B1
-                            .1 F detect fails
+                        .2 System checks if F is available to use it as B1
+                            .1 F detect failed
                                 .1 System asks for B1 // #6
                                     .1 User omits B1
                                         .1 System loops back to #6
                                     .2 User gives B1
                                         .1 System does #7
                                     .3 User aborts
-                            .2 F detect succeeds
+                            .2 F detect succeeded
                                 .1 System offers a search for entries for A with F as B1
                                     .1 User accepts
                                         .1 System tries a search using A and F as B1

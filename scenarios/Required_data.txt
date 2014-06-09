@@ -1,51 +1,49 @@
 Required data
-v.1
-
-A 
-    time period
+v2
+------------------------------
+A : time period
     a specific time period ("past day/week/month")
-B1 
-    original language
+
+B1: original language
     the language of the original
     the language in which the phrase first originated 
     e.g. the original language of the "Happy Birthday" song is English
-B2 
-    target language
+
+B2: target language
     translation's target language, the language in which user is looking for translation(s)
-C
-    the search phrase, the phrase the user wants to translate
-D
-    the source language of the search phrase, the language in which you enter the search phrase
-E
-    the target language(s), the language in which to look for translations // if more than one TL -- use a checkbox
-F
-    user's locale's language, as detected by the system if the user fails to give B1
+
+C:  the search phrase, the phrase the user wants to translate
+
+D:  the source language of the search phrase, the language in which you enter the search phrase
+
+E:  the target language(s), the language in which to look for translations // if more than one TL -- use a checkbox
+
+F:  user's locale's language, as detected by the system if the user fails to give B1
     the language of the browser
     the language of the "Accept-Language" header
-G
-    a search for entries where:
+
+G:  a search for entries where:
     A = the value entered by the user (e.g. "past day")
     B1 = the original language
-H
-    a search for entries where:
+
+H:  a search for entries where:
     A = the value entered by the user (e.g. "past day")
     B1 = the language in which the phrase was entered when the entry was first created
-I
-    a search in which the system is using F as B1
-J   
-    a search in which the system is using F as the language in which the phrase was entered when the entry was first created 
-K
-    the system will use F and ask the user to give B2
-L
-    the system will ask for A and use F as B1
-M
-    the system will ask the user to give both A and B2          
-N
-    a search when the user has no search phrase 
+
+I:  a search in which the system is using F as B1
+
+J:  a search in which the system is using F as the language in which the phrase was entered when the entry was first created 
+
+K:  the system will try a search using F and asking the user to give B2
+
+L:  the system will ask for A and use F as B1
+
+M:  the system will ask the user to give both A and B2          
+
+N:  a search when the user has no search phrase 
     i.e. the user just wants to search for some entries in one language
     User asks a search for entries for A for B1 and B2.
-O
-    a search using a search phrase
-    the user has a search phrase and wants to find a translation of the phrase
-P   
-    the user will give B2
+
+O:  a search using a search phrase, i.e the user has a search phrase and wants to find a translation of the phrase
+
+P:  the user will give B2
