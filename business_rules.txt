@@ -1,3 +1,5 @@
+v3
+
 // the business rules must talk about principles in definite measurable terms
 
 BR001 - The system administrator role must have access to all the four basic functions of persistent storage (CRUD).
@@ -49,4 +51,25 @@ BR016 - the source of the phrase will be:
             - speech
             - lecture
 
-BR017 - Translations will be rated by the system of likes/upvotes-downvotes.
+BR017. No bad words in user names or comments
+BR018. Bad words are OK in the entries
+BR019. A warning will be on the webpage to notify uses that some entries may contain mature content or coarse language
+BR020. When an entry is made in Language X, it will add the newsletter sending to all users who knows X and sere subscribed to the email list 
+BR021. There are four types of user status:
+-   Active
+-   Inactive
+-   Blocked
+-   Deactivated
+BR022. User must be able to deactivate the account
+BR023. Garbage input will not be saved.
+BR024. One user can like/dislike a translate entry only once a day
+BR025. User will be blocked for flooding ads & comments
+BR026. Flagged users get automatic warning email
+BR027. If translation doesn’t’ exit, user can make a request. Then the system will send the users whose emails are in the email list and interested in the languages in the request.
+BR028. Native speakers get authority status
+BR029. Entry will have style mark, like slang, song, and movie and so on.
+
+BR030. Translations will be rated by the system of likes/upvotes-downvotes.
+BR031. If the user wants to create a new language, the system will do it.
+BR032. Before the system will create a new language table, it will check it for availability and validity. 
+BR033. Every newsletter will have a link to unsubscribe.
