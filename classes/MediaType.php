@@ -1,10 +1,10 @@
 <?php
-//v1 (Habib)
+//v2 (Habib)
 Class MediaType{
     
     //declaring Variables
     private $mediaTypeId;
-    private $mediaTypeName;
+    private $mediaTypeName; // video, audio, image
 
     //Start of the getters and setters
     
