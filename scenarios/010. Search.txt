@@ -1,5 +1,6 @@
 Igor
-v4
+v5
+// a better concept is 010.b. Search.txt
 
 10 User wants to make a Search
 
