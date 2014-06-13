@@ -1,3 +1,5 @@
+v3
+
 Kamlesh
 
 
@@ -105,3 +107,7 @@ End of Kamlesh's Addition
                 .4 User confirms saving
                 .5 System saves the entry
                 .6 System displays the result.
+
+------------------------------------
+If the User has made a search and wants to login to make a change, his search results should not be lost when he makes a login, i.e. make a login through a popup window so that after the login the user can return to the place where he was
+------------------------------------
