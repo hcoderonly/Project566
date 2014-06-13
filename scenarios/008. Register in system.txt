@@ -1,3 +1,5 @@
+v3
+
 (Habib)
 
 Required Info:
@@ -43,3 +45,7 @@ User wants to register in the system
                     .1 System does #3
                 .2 Create fails
                     .1 System notifies 
+
+Scenarios:
+55. User provides false info about himself
+        e.g. lies about birthdate
