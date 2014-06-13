@@ -74,3 +74,6 @@ BR031. If the user wants to create a new language, the system will do it.
 BR032. Before the system will create a new language table, it will check it for availability and validity. 
 BR033. Every newsletter will have a link to unsubscribe.
 BR034. User will be able to create a reference link between an original phrase and each of its copies. // That way the system will not have to rely on making the verbatim translation when searching for copies.
+BR035. The facade of the website will show interesting info about what this website is about: a list of 5-10 random entries (originals or translations, or both)
+BR036. The user is able to create an entry out of the search phrase when search did not return any results.
+BR037: The system gives the user a privacy statement.
