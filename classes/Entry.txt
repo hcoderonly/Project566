@@ -69,3 +69,9 @@ meaning
     Explanation of the meaning:
     
         
+A question:
+    
+    Should we break the "source" column into several columns, like 
+    "originator" // person who first said the phrase
+    "time" // when the phrase first appeared, e.g. when the poem was written
+    etc.
