@@ -1,0 +1,5 @@
+Explanation: 
+
+    User wants to edit the information entered into the entry's source section because of a typo.
+
+    // Should this be OK? If yes, what kind of user will be able to do that?
