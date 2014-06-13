@@ -1,0 +1,79 @@
+User 
+-------
+id
+first_name
+last_name
+login
+password
+rating
+mugshot
+email
+DOB
+location
+registration_date 
+user_type      
+language
+email_subscribed
+interest_langs
+-------------------------
+
+
+id:
+
+    (int) autoincremented.
+
+first_name      
+
+    ...
+
+last_name       
+
+    ...
+
+login  
+
+    ...
+
+password        
+
+    ...
+
+rating
+    
+    integer. range: -n to n
+
+mugshot
+
+    a picture of a user's face. Or maybe an avatar?    
+
+email
+
+    zero or more?
+
+DOB
+    date of birth. Why? So we can send him an happy birthday email? If the user is registered but hasn't come to the site for a long time, the birthday email will serve as a reminder about the site
+
+location
+
+    address, specific/general
+
+registration_date
+
+    when the user got registered. Why do we need that info?
+
+user_type 
+
+    admin, user
+
+language
+
+    one or more
+
+email_subscribed
+
+    bit whether user is subscribed or not
+
+interest_langs
+
+    langs in which the user is interested
+

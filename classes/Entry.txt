@@ -1,0 +1,71 @@
+Entry
+-------------
+id
+text
+verbatim
+transliteration
+auth_status
+media
+comments
+rating
+tags
+--------------
+
+id  
+
+    (int) [language tag]+[integer]:  ru98, ru99, en47
+
+text 
+    
+    (string) the text of the entry itself
+
+verbatim
+    
+    (string)  CSV: happy, birthday,to,you
+
+transliteration* 
+
+    (string)  The way it's pronounced. 
+    for Russian: "s dnyom rozhdenya tebya".
+
+auth_status 
+    
+    (string)  auth = "authentication". 
+    Can have one of 3 values: 
+    "o" for "original" (like "Happy Birthday"), 
+    "t" for "translation", and 
+    "u" for "unknown" or "unidentified".
+
+translation_of  
+
+    (string)  if "original"="1", the id of the entry with the "original"
+
+source  
+
+    (string)  source (name of author, book, movie etc.) where the phrase is taken from.
+
+creator  
+    
+    (string)  id of the user who created the entry
+
+media  
+
+    (string)  a link to an audio/video/image file
+
+comments    
+
+    (string)  
+
+rating* 
+
+    (int) 
+
+tags
+    
+    (string) words to help in making a topical search
+
+meaning
+    
+    Explanation of the meaning:
+    
+        
