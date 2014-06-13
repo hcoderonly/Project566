@@ -77,3 +77,5 @@ BR034. User will be able to create a reference link between an original phrase a
 BR035. The facade of the website will show interesting info about what this website is about: a list of 5-10 random entries (originals or translations, or both)
 BR036. The user is able to create an entry out of the search phrase when search did not return any results.
 BR037: The system gives the user a privacy statement.
+BR038. User will have a choice to use his real name or his handle.
+BR039. System will wait <how long?> for a response to the activation email it sent to the new registered user.
