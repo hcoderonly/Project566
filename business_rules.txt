@@ -1,4 +1,4 @@
-v3
+v4.
 
 // the business rules must talk about principles in definite measurable terms
 
@@ -73,3 +73,4 @@ BR030. Translations will be rated by the system of likes/upvotes-downvotes.
 BR031. If the user wants to create a new language, the system will do it.
 BR032. Before the system will create a new language table, it will check it for availability and validity. 
 BR033. Every newsletter will have a link to unsubscribe.
+BR034. User will be able to create a reference link between an original phrase and each of its copies. // That way the system will not have to rely on making the verbatim translation when searching for copies.
