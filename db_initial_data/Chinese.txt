@@ -1,0 +1,15 @@
+EntryId: cmn1
+EntryText: 祝你生日快乐
+EntryVerbatim: wish, you, birth, day, happy
+EntryTransliteration: zhu, ni, sheng, ri, quai, le
+EntryAuthor: ???
+EntryGeo: China
+EntryAuthorTime: 20th century
+EntrySourceType: song
+EntrySourceName: 
+EntrySourceTime: 
+EntryMeaning: 
+EntryAuthStatus: translation
+EntryTranslOf: eng4
+EntryHttpLink:
+

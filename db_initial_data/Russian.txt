@@ -56,7 +56,7 @@ EntryTranslOf:
 * * *
 
 EntryId: ru4
-EntryText: С днем рожденья тебя
+EntryText: С днем рожденья тебя!
 EntryVerbatim:
 EntryTransliteration:
 EntryAuthor: ???
