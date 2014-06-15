@@ -1,0 +1,5 @@
+Province
+--------
+ProvinceId
+ProvinceName
+
