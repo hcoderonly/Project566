@@ -1,0 +1,71 @@
+Russian winged words
+
+* * *
+
+EntryId: ru1
+EntryText: И скучно, и грустно, и некому руку подать.
+EntryVerbatim: and, bored, and, sad, and, nobody, hand, give
+EntryTransliteration: i skuchno, i grustno, i nekomu ruku podat
+EntryAuthor: Mikhail Lermontov
+EntryGeo: Russia
+EntryAuthorTime: 1814-1841
+EntrySourceType: Poem 
+EntrySourceName: ???
+EntrySourceTime: ???
+EntryMeaning:
+EntryAuthStatus: Original
+EntryTranslOf:
+EntryHttpLink: http://max.mmlc.northwestern.edu/~mdenner/Demo/texts/bored_sad.html
+
+* * *
+
+EntryId: ru2
+EntryText: Окно в Европу
+EntryVerbatim: window, in, Europe
+EntryTransliteration: okno v evropu
+EntryAuthor: Alexander Pushkin
+EntryGeo: Russia
+EntryAuthorTime: 1799-1837
+EntrySourceType: poem
+EntrySourceName: Bronze Rider 
+EntrySourceTime: ???
+EntryMeaning: a reference to the city of St.Petersburg
+EntryAuthStatus: original
+EntryTranslOf:
+EntryTranslOf:
+EntryHttpLink:
+
+* * *
+
+EntryId: ru3
+EntryText: С милым рай и в шалаше
+EntryVerbatim: with, loved, paradise, and, in, hovel
+EntryTransliteration:
+EntryAuthor: N. M. Ibragimov
+EntryGeo: Russia
+EntryAuthorTime: 1778-1818
+EntrySourceType: poem
+EntrySourceName: A Russian Song
+EntrySourceTime: 
+EntryMeaning: 
+EntryAuthStatus: original
+EntryTranslOf:
+EntryHttpLink:
+EntryTranslOf:
+
+* * *
+
+EntryId: ru4
+EntryText: С днем рожденья тебя
+EntryVerbatim:
+EntryTransliteration:
+EntryAuthor: ???
+EntryGeo: Russia
+EntryAuthorTime: 
+EntrySourceType: song
+EntrySourceName: 
+EntrySourceTime: 1990's
+EntryMeaning: 
+EntryAuthStatus: translation
+EntryTranslOf: eng4
+EntryHttpLink:

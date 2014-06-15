@@ -1,0 +1,72 @@
+English
+
+* * *
+
+EntryId: eng1
+EntryText: It's boring and sad, and there's no one around.
+EntryVerbatim:
+EntryTransliteration:
+EntryAuthor: Igor Entaltsev
+EntryGeo: Canada
+EntryAuthorTime: 1975
+EntrySourceType: poem
+EntrySourceName:
+EntrySourceTime: 2014 
+EntryMeaning: 
+EntryAuthStatus: translation
+EntryHttpLink:
+EntryTranslOf: ru1
+
+* * *
+
+EntryId: eng3
+EntryText: A window to Europe
+EntryVerbatim:
+EntryTransliteration:
+EntryAuthor: Igor Entaltsev
+EntryGeo: Canada
+EntryAuthorTime: 1975-
+EntrySourceType: poem
+EntrySourceName: Bronze Rider
+EntrySourceTime: 
+EntryMeaning: 
+EntryAuthStatus: translation
+EntryTranslOf: ru2
+EntryHttpLink:
+
+* * *
+
+EntryId: eng2
+EntryText: even a hovel is paradise when you're with someone you love.
+EntryVerbatim: 
+EntryTransliteration:
+EntryAuthor: Igor Entaltsev
+EntryGeo: Canada
+EntryAuthorTime: 1975-
+EntrySourceType: poem
+EntrySourceName: A Russian Song
+EntrySourceTime: 2014
+EntryMeaning: 
+EntryAuthStatus: translation
+EntryHttpLink:
+EntryTranslOf: ru3
+
+* * *
+
+EntryId: eng4
+EntryText: Happy Birthday to you
+EntryVerbatim:
+EntryTransliteration:
+EntryAuthor: Patty Hill, Mildred J. Hill
+EntryGeo: US
+EntryAuthorTime: 19th century
+EntrySourceType: song
+EntrySourceName: 
+EntrySourceTime: 1893
+EntryMeaning: 
+EntryAuthStatus: original
+EntryTranslOf:
+EntryHttpLink:
+
+
+

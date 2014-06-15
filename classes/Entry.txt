@@ -1,14 +1,22 @@
+version 2
+
 Entry
 -------------
-id
-text
-verbatim
-transliteration
-auth_status
-media
-comments
-rating
-tags
+EntryId: 
+EntryText:
+EntryVerbatim:
+EntryTransliteration:
+EntryAuthor:
+EntryGeo:
+EntryAuthorTime:
+EntrySourceType:
+EntrySourceName: 
+EntrySourceTime: 
+EntryMeaning: 
+EntryAuthStatus:
+EntryTranslOf:
+EntryHttpLink:
+
 --------------
 
 id  
