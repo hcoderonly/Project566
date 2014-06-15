@@ -1,0 +1,19 @@
+Comment
+-------
+CommentId
+CommentText
+CommentAuthor
+
+* * *
+
+CommentId
+
+    autoincremented
+
+CommentText
+
+    the text of the comment
+
+CommentAuthor
+
+    the UserId of the user who created the comment

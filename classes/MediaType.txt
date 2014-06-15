@@ -1,0 +1,17 @@
+MediaType
+---------
+
+MediaTypeId
+MediaTypeName
+
+
+* * *
+
+MediaTypeId
+
+    ...
+
+MediaTypeName
+        
+    the name of the media type, like: video, image, audio
+    // or should it be a file type (png, mp4, mp3, avi etc.)?

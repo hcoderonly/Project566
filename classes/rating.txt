@@ -1,0 +1,24 @@
+Rating
+------
+id
+likes
+dislikes
+author
+
+* * * * *
+
+id
+
+    outo-increment
+
+likes
+
+    ...
+
+dislikes
+
+    
+
+author
+
+    the userId of the user who created the rating record

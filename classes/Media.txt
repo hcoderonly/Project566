@@ -1,0 +1,35 @@
+Media
+-----
+id      
+name        
+desc        
+link        
+author
+typeId
+
+ * * * * *
+
+MediaId      
+
+    autoincremented
+
+MediaName
+
+    the name of the media, like ???
+
+MediaDesc
+
+    description -  what this media is ...
+
+link        
+
+    ???
+
+author
+
+    the UserId of the User who ...???   
+
+typeId
+
+    ???
+
