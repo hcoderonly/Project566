@@ -9,7 +9,7 @@ EntryTransliteration:
 EntryAuthor: Igor Entaltsev
 EntryGeo: Canada
 EntryAuthorTime: 1975
-EntrySourceType: poem
+EntrySourceForm: poem
 EntrySourceName:
 EntrySourceTime: 2014 
 EntryMeaning: 
@@ -26,7 +26,7 @@ EntryTransliteration:
 EntryAuthor: Igor Entaltsev
 EntryGeo: Canada
 EntryAuthorTime: 1975-
-EntrySourceType: poem
+EntrySourceForm: poem
 EntrySourceName: Bronze Rider
 EntrySourceTime: 
 EntryMeaning: 
@@ -43,7 +43,7 @@ EntryTransliteration:
 EntryAuthor: Igor Entaltsev
 EntryGeo: Canada
 EntryAuthorTime: 1975-
-EntrySourceType: poem
+EntrySourceForm: poem
 EntrySourceName: A Russian Song
 EntrySourceTime: 2014
 EntryMeaning: 
@@ -60,7 +60,7 @@ EntryTransliteration:
 EntryAuthor: Patty Hill, Mildred J. Hill
 EntryGeo: US
 EntryAuthorTime: 19th century
-EntrySourceType: song
+EntrySourceForm: song
 EntrySourceName: 
 EntrySourceTime: 1893
 EntryMeaning: 
@@ -68,5 +68,20 @@ EntryAuthStatus: original
 EntryTranslOf:
 EntryHttpLink:
 
+* * *
 
+EntryId: eng5
+EntryText: From you - action, from God - benediction.
+EntryVerbatim:
+EntryTransliteration:
+EntryAuthor: ?
+EntryGeo:
+EntryAuthorTime:
+EntrySourceForm:
+EntrySourceName: 
+EntrySourceTime: 
+EntryMeaning: 
+EntryAuthStatus:
+EntryTranslOf: fa1
+EntryHttpLink:
 

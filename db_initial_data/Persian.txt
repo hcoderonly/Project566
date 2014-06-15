@@ -1,0 +1,14 @@
+EntryId: fa1
+EntryText: از تو حرکت، از خدا برکت.
+EntryVerbatim: From, you, action, from, God, benediction.
+EntryTransliteration:
+EntryAuthor: ???
+EntryGeo: Persia
+EntryAuthorTime: ?
+EntrySourceForm: ?
+EntrySourceName: ?
+EntrySourceTime: ?
+EntryMeaning: Take care of your business yourself
+EntryAuthStatus: original
+EntryTranslOf:
+EntryHttpLink:

@@ -9,7 +9,7 @@ EntryTransliteration:
 EntryAuthor:
 EntryGeo:
 EntryAuthorTime:
-EntrySourceType:
+EntrySourceForm:
 EntrySourceName: 
 EntrySourceTime: 
 EntryMeaning: 

@@ -5,7 +5,7 @@ EntryTransliteration: zhu, ni, sheng, ri, quai, le
 EntryAuthor: ???
 EntryGeo: China
 EntryAuthorTime: 20th century
-EntrySourceType: song
+EntrySourceForm: song
 EntrySourceName: 
 EntrySourceTime: 
 EntryMeaning: 

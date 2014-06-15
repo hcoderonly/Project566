@@ -1,0 +1,10 @@
+Subscription
+------------
+SubscriberEmail
+SubscriberName
+SubscriberLocation
+SubscriberStatus // 1 
+
+---------------------
+1) disabled/enabled; if you unsubscrive, you stop getting emails
+

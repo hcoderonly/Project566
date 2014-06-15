@@ -1,0 +1,21 @@
+Location
+--------
+LocId
+LocCity
+LocProvince
+ColCountry
+
+------------------------
+Suggestion:
+
+Make location 4 tables
+
+Province
+--------
+...
+...
+
+Country
+-------
+
+etc.
