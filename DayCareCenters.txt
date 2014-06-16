@@ -7,11 +7,14 @@ Suggestion: add your risk as you can see it and then we select 4 of the best to 
 Risk 1
     
     Description: 
-        Health risk
+        inadequate health and medical surveillance
         Small kids can carry the viruses and spread to others easily and quickly. The poor management on health risk would keep the clients away from the business. 
 
     Mitigation:
-        Health risk can be minimized by proactive policy. Make a clear sick-kids policy will prevent the kids healthy.
+        Health risk can be minimized by proactive policy. Make a clear sick-kids policy will keep the kids healthy.
+        Staff should include a doctor or a nurse that can provide first aid measures.
+
+
 Risk 2
     
     Description:
@@ -27,11 +30,12 @@ Risk 3
     Description:
         Safety risk
         Keeping children safe is always the big risk for a day care. The safeties for both outdoor activities and indoor activities are important.
+        Facilities are not child proof enough (furniture, electrical outlets etc.)
 
     Mitigation:
         Careful location selection and well-constructed play-ground will keep children safe in outdoor activities.
         And proper toys, room decoration and furniture will enhance the safety for the indoor activity.
-
+        Child-proof the furniture and electrical outlets
     
 Risk 4
     
@@ -43,18 +47,29 @@ Risk 4
         A reporting system will help to minimize the risks.
         And the computing system for registration and payment processing will be helpful as well.
 
-Risk
+Risk 5
     
     Description:
+        Feeding arrangments are not adequate, government doesn't grant license
+        Food supplied to the Day Care Center is of poor quality
     Mitigation:
+        Arrange to get food from licensed suppliers only.
+        Arrange for a kitchen at each day care center.
     
-Risk
+Risk 6
     
     Description:
+        Security
     Mitigation:
+        Take measures to provide secure access into the day care territory:
+            provide locks, surveillance cameras, fence around the playground to keep animals off
+            provide an area for a security guard
+            photo ID's for the parents (to prevent kidnapping)
     
-Risk
+Risk 7
     
     Description:
+        System data insecure:
+        Registration information theft/leakage from the system
     Mitigation:
-    
+        Take measures to provide for data security, confedintiality.
