@@ -1,0 +1,60 @@
+/*
+Suggestion: add your risk as you can see it and then we select 4 of the best to show him.
+*/
+
+// Risks 1-4 is by Lily
+
+Risk 1
+    
+    Description: 
+        Health risk
+        Small kids can carry the viruses and spread to others easily and quickly. The poor management on health risk would keep the clients away from the business. 
+
+    Mitigation:
+        Health risk can be minimized by proactive policy. Make a clear sick-kids policy will prevent the kids healthy.
+Risk 2
+    
+    Description:
+        Employee risk
+        The staff-to-child ratio is different depending on the ages of the children. And the director of each site may have more specific requirement. Always keeping the staff-to-child ratio and meeting the regulation are the challenges. 
+
+    Mitigation:
+        Implementing a computing system to manage the staff schedules will greatly reduce the risks.
+        And considerable staff hiring policy will be also helpful to reduce the risks fundamentally.
+
+Risk 3
+    
+    Description:
+        Safety risk
+        Keeping children safe is always the big risk for a day care. The safeties for both outdoor activities and indoor activities are important.
+
+    Mitigation:
+        Careful location selection and well-constructed play-ground will keep children safe in outdoor activities.
+        And proper toys, room decoration and furniture will enhance the safety for the indoor activity.
+
+    
+Risk 4
+    
+    Description: 
+        Communication and trust risk
+        Day care centers need to keep good communications with parents and gain their trust. Otherwise they will lose the clients
+
+    Mitigation:
+        A reporting system will help to minimize the risks.
+        And the computing system for registration and payment processing will be helpful as well.
+
+Risk
+    
+    Description:
+    Mitigation:
+    
+Risk
+    
+    Description:
+    Mitigation:
+    
+Risk
+    
+    Description:
+    Mitigation:
+    
