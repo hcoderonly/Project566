@@ -1,5 +1,5 @@
 Required data
-v3
+v4
 ------------------------------
 A : time period
     a specific time period ("past day/week/month")
@@ -11,17 +11,27 @@ B:  original language
     the language in which the phrase first originated 
     e.g. the original language of the "Happy Birthday" song is English
 
-C:  the search phrase, the phrase the user wants to translate
+C:  the text of the search phrase, the phrase the user wants to translate
     "Show me available entries that are the equivalent of this phrase"
     "Show me phrases that are equivalent to this search phrase"
     "Show me the phrases whose verbatim is the same as the verbatim of this phrase"
     "Show me what you have for the 'Happy Birthday' song"
+
+    the text of the entry being created
+    the text of the new entry the user is creating
+    "I am creating this entry for this language"
+    "I am creating an entry for the 'Happy Birthday' song, the entry will be in English" 
 
 D:  the source language of the search phrase, 
     the language in which you enter the search phrase
     [140611w: I begin to doubt whether there is any need for this
     since the language in which the search phrase is entered
     could be autodetected]
+
+    The Language in which to create the new entry.
+    The language in which the new entry will be created.
+    The language of the entry being created.
+    "I am creating an entry for the 'Happy Birthday' song, the entry will be in English" 
 
 E:  the target language(s), the language in which to look for entries 
     // if more than one TL -- use a checkbox
@@ -74,3 +84,16 @@ S:  unathenticated entry.
 
 T:  Authenticity status
     the status of an entry in terms of whether it's one of the three: Q, R, or S.
+
+U:  Equivalent entry
+    an entry whose verbatim is similar to C
+
+V:  Entry that is retrieved during the search for U's while creating a new entry
+    A list of these entries is displayed to the user
+    One of these entries must be picked by the user to be 
+        the original of the entry the user is creating
+        a translation of the original entry the user is creating
+        another [variant] translation of the entry the user is creating 
+    Each of these entries has a radio button for the user to pick to link to the entry he is making 
+
+

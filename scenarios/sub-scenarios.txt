@@ -1,5 +1,5 @@
 Sub-scenarios
-v1
+v2
 
 #1 system tries a seach using C, D, E
 #2 system asks for C
@@ -11,7 +11,8 @@ v1
 #8 system asks for B2
 #9 system asks for A
 #10 system asks for A and B2
-#11 
+#11 system asks for D and C when creating a new entry
 #12 system asks for A and B1
-#13
+#13 system tries a search for U's
 #14 system asks for A and B1 and B2
+#15 

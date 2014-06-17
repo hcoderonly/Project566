@@ -1,0 +1,93 @@
+User wants to creat a new entry
+v1
+    Required data:
+
+
+
+.1 User asks to create a new entry
+    
+    .1 System tries a check of the user's status
+
+        .1 System finds the user is not logged in
+
+            .1 System asks the user to pick one: log-in or sign-up
+
+                .1 User picks log-in
+
+                    .1 System goes through the log-in scenario
+
+                        .1 User fails to login
+
+                        .2 User logs in
+
+                            .1 System does #11
+
+                .2 User picks sign-up
+
+                    .1 System goes through the sign-in scenario
+
+                        .1 User logs in 
+
+                            .1 System does #11
+
+                .3 User cancels
+
+                    .1 System returns to ...
+
+        .2 System finds the user is logged in
+
+            .1 System asks for $D and $C (#11)
+
+                .1 User omits both $D and $C
+
+                    .1 System loops back to #11
+
+                .2 User omits $D, gives $C
+
+                    .1 System tries to detect $D
+
+                        .1 $D detect fails
+
+                            .1 System asks for $D
+
+                        .2 $D detect succeeds
+
+                            .1 System asks to confirm or pick $D // if detected $D is wrong
+
+                                .1 User confirms the detected $D
+
+                                    .1 System does #13
+
+                                .2 User picks one $D
+
+                .3 User gives $D, omits $C
+
+                    .1 System asks for $C (#2)
+
+                .4 User gives both $D and $C
+
+                    .1 System tries a search for $U's (#13)
+
+                        .1 $U search fails
+
+                            .1 System asks to confirm or cancel
+
+                                .1 System tries to save the new entry
+
+                            .2 User cancels
+
+                                . 1 System returns to #11
+
+                        .2 $U search succeeds
+
+                            .1 System returns a descending list of matches with their authenticity status
+
+                                .1 System asks to pick a $V and link it to his new entry
+
+                                    .1 User picks and links
+
+                                        .1 System tries to link and save
+
+                                    .1 User cancels
+
+                .5 User cancels
