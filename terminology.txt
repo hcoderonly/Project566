@@ -1,0 +1,9 @@
+v1
+
+GT - Google Translate
+Literary - a literary translation, satisfies the requirements of literary work
+Original Language - "language one", i.e. the language where the winged phrase originated
+Source Language – the language in which the users input phrase and want to get the translation in other language.
+Target Language – the language that the users want to translate to. 
+Verbatim - a verbatim (word-for-word) translation
+
