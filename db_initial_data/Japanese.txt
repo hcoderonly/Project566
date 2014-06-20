@@ -1,0 +1,20 @@
+
+EntryId: jap01
+EntryText: 誕生日おめでとう
+EntryVerbatim: 
+EntryTranslit: Tanjōbi omedetō
+EntryAuthorName:
+EntryGeo: Japan
+EntryAuthorTime
+EntrySourceForm: song
+EntrySourceName
+EntrySourceTime
+EntryMeaning
+EntryAuthStatus
+EntryTranslOf: eng4
+EntryHttpLink: http://www.youtube.com/watch?v=ufpqAspbV44
+EntryCreatorId: Igor
+EntryRatingId
+EntryTags
+EntryCommentId
+EntryMediaId
