@@ -1,9 +1,141 @@
-v1
+v2
+
+Authenticity status (T)
+
+    the status of an entry in terms of whether it's one of the three: 
+    an original phrase, 
+    a translation, 
+    or an unathenticated entry.
+
+Browse
+
+    the type of search when a user enters no search phrase
+    user just gives the system search parameters like Time Frame, Authenticity Status, Target Language
+
+Entry Set
+
+    a collection of the Original Phrase and all its available translations into all available languages
+        e.g. Happy Birthday and all its translations in Russian, Mandarin, French etc.
+    An entry set has a subset for each available language 
+        e.g.    Russian subset is a collection of all the Russian translations
+                French subset is a collection of all the French translations etc.
+
+Equivalent entry (U)
+
+    an entry whose verbatim is similar to the verbatim of the search phrase
 
 GT - Google Translate
-Literary - a literary translation, satisfies the requirements of literary work
-Original Language - "language one", i.e. the language where the winged phrase originated
-Source Language – the language in which the users input phrase and want to get the translation in other language.
-Target Language – the language that the users want to translate to. 
-Verbatim - a verbatim (word-for-word) translation
+
+Language of Interest
+
+    the language of interest
+    the language(s) in which the user wants to receive entries in the newsletter
+
+Literary
+
+    a literary translation, satisfies the requirements of literary work
+
+Lookup
+    
+    the type of search when the user has a search phrase and wants to find equivalent entries
+
+Original language (B)
+
+    the language of the original
+    the language in which the phrase first originated 
+    e.g. the original language of the "Happy Birthday" song is English
+
+Original phrase (Q)
+
+    the phrase that has been authenticated as the original phrase, not as a translation
+    the phrase which is used for translations.
+    the one and only phrase that is the source of translations
+    the phrase used to measure how good translations are.
+
+Search
+    
+    search of the database, of 2 types: "Browse" and "Lookup"
+
+Search phrase (C)
+
+    1)  the text of the search phrase, the phrase the user wants to translate
+        the phrase the user uses to make a Lookup
+        "Show me available entries that are the equivalent of this phrase"
+        "Show me phrases that are equivalent to this search phrase"
+        "Show me the phrases whose verbatim is the same as the verbatim of this phrase"
+        "Show me what you have for the 'Happy Birthday' song"
+
+    2)  the text of the entry being created
+        the text of the new entry the user is creating
+        "I am creating this entry for this language"
+        "I am creating an entry for the 'Happy Birthday' song, the entry will be in English" 
+
+Source Language (D)
+
+    the language in which the users input phrase and want to get the translation in other language.
+    2)  the source language of the search phrase, 
+        the language in which you enter the search phrase
+        [140611w: I begin to doubt whether there is any need for this
+        since the language in which the search phrase is entered
+        could be autodetected]
+
+    3)  The Language in which to create the new entry.
+        The language in which the new entry will be created.
+        The language of the entry being created.
+        "I am creating an entry for the 'Happy Birthday' song, the entry will be in English" 
+
+Target Language (E)
+
+    the target language(s), the language in which to look for entries 
+    // if more than one TL -- use a checkbox
+    "Show me entries in this language"
+
+Time frame (A)
+
+    a search parameter
+    a specific time period ("past day/week/month")
+    a time period within which the entry was created
+    a search constraint: "Show me records made within this time frame."
+
+Translation (R)
+
+    the phrase that has been authenticated as a translation of an original phrase
+    entries that are translations of Q.
+
+Unathenticated Entry (S)
+
+    a phrase/entry that is NOT YET authenticated as an original or a translation.
+
+User's Locale Language (F)
+
+    user's locale's language, as detected by the system if the user fails to give B
+    the language of the browser
+    the language of the "Accept-Language" header
+    [140612th: I have doubts as to the need for this also]
+
+Verbatim
+    
+    a verbatim (word-for-word) translation
+    to be done by the Bing API
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
