@@ -1,6 +1,8 @@
+v2
+
 Location
 --------
-LocId
-LocCity
-LocProvince
-LocCountry
+LocationId
+Address
+PostalCode
+CityId

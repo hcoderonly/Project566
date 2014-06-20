@@ -1,17 +1,15 @@
+v2
+
 MediaType
 ---------
 
-MediaTypeId
+MediaTypeId // 1
 MediaTypeName
 
 
-* * *
+--------------
 
-MediaTypeId
+1)
 
-    ...
-
-MediaTypeName
-        
-    the name of the media type, like: video, image, audio
+2)  the name of the media type, like: video, image, audio
     // or should it be a file type (png, mp4, mp3, avi etc.)?

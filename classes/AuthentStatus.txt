@@ -1,0 +1,13 @@
+AuthentStatus // 1
+-------------
+
+AuStatId
+AuStatName
+
+* * *
+
+1)  Authentication status
+
+    o = original phrase
+    t = translation
+    u = unknown/ unauthenticated

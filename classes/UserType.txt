@@ -1,0 +1,9 @@
+UserType
+--------
+UserTypeId
+UserTypeName
+
+----------
+"admin"
+"registered user"
+"guest"

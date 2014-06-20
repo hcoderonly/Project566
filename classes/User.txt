@@ -1,79 +1,35 @@
+v2
+
 User 
 -------
-id
+id // 1
 first_name
 last_name
 login
 password
-rating
-mugshot
-email
-DOB
-location
-registration_date 
-user_type      
-language
-email_subscribed
-interest_langs
+mediaId
+ratingId
+mugshot // 2
+email // 3
+DOB // 4
+locationId
+registrDate // 6
+userType // 7     
+language // 8
+subscribedToEmail // 5
+langOfInterest // 9
 -------------------------
 
 
-id:
-
-    (int) autoincremented.
-
-first_name      
-
-    ...
-
-last_name       
-
-    ...
-
-login  
-
-    ...
-
-password        
-
-    ...
-
-rating
-    
-    integer. range: -n to n
-
-mugshot
-
-    a picture of a user's face. Or maybe an avatar?    
-
-email
-
-    zero or more?
-
-DOB
-    date of birth. Why? So we can send him an happy birthday email? If the user is registered but hasn't come to the site for a long time, the birthday email will serve as a reminder about the site
-
-location
-
-    address, specific/general
-
-registration_date
-
-    when the user got registered. Why do we need that info?
-
-user_type 
-
-    admin, user
-
-language
-
-    one or more
-
-email_subscribed
-
-    bit whether user is subscribed or not
-
-interest_langs
-
-    langs in which the user is interested
+1)  (int) autoincremented.
+2)  mugshot: a picture of a user's face. Or maybe an avatar?    
+3)  email: zero or more?
+4)  DOB: date of birth. 
+    Why? So we can send him an happy birthday email? 
+    If the user is registered but hasn't come to the site for a long time, the birthday email will serve as a reminder about the site
+5)  yes or no
+6)  registration date. when the user got registered. Why do we need that info?
+7)  userType: admin, user
+8)  language: one or more
+9)  lang(s) in which the user is interested
 

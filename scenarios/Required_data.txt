@@ -22,7 +22,11 @@ C:  the text of the search phrase, the phrase the user wants to translate
     "I am creating this entry for this language"
     "I am creating an entry for the 'Happy Birthday' song, the entry will be in English" 
 
-D:  the source language of the search phrase, 
+D:  the language of interest
+
+    the language(s) in which the user wants to receive entries in the newsletter
+
+    the source language of the search phrase, 
     the language in which you enter the search phrase
     [140611w: I begin to doubt whether there is any need for this
     since the language in which the search phrase is entered
@@ -96,4 +100,20 @@ V:  Entry that is retrieved during the search for U's while creating a new entry
         another [variant] translation of the entry the user is creating 
     Each of these entries has a radio button for the user to pick to link to the entry he is making 
 
+W:  user's email
+    
+    the email the user uses to subscribe for newsletter
+
+    the email the user gives as he registers in the system
+
+X:  Personal info
+
+    the optional info user can enter at registration stage
+    things like name, gender, country, professional area, etc.
+
+Y:  Username
+    the handle the user gives to be known in the system
+
+Z:  Password
+    the password the user gives to register in the system
 

@@ -1,19 +1,13 @@
+v2
+
 Comment
 -------
-CommentId
-CommentText
-CommentAuthor
+CommentId // 1
+CommentText // 2
+CommentAuthor // 3
 
 * * *
 
-CommentId
-
-    autoincremented
-
-CommentText
-
-    the text of the comment
-
-CommentAuthor
-
-    the UserId of the user who created the comment
+1) autoincremented
+2) the text of the comment
+3) the UserId of the user who created the comment

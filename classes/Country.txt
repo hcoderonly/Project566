@@ -1,4 +1,7 @@
+v2
+
 Country
 -------
 CountryId
 CountryName
+CountryCode

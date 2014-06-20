@@ -1,0 +1,10 @@
+Language
+--------
+LangId
+LangName
+
+-----------------------------------
+cmn = Mandarin
+ru = Russian
+fa = Persian
+en = English

@@ -1,5 +1,6 @@
 Subscription
 ------------
+SubscriberId
 SubscriberEmail
 SubscriberName
 SubscriberLocation

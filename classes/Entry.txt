@@ -1,52 +1,52 @@
-version 2
+v3
 
 Entry
 -------------
-EntryId: 
-EntryText:
-EntryVerbatim:
-EntryTransliteration:
-EntryAuthor:
-EntryGeo:
-EntryAuthorTime:
-EntrySourceForm:
-EntrySourceName: 
-EntrySourceTime: 
-EntryMeaning: 
-EntryAuthStatus:
-EntryTranslOf:
-EntryHttpLink:
+EntryId // 1
+EntryText // 2
+EntryVerbatim // 3
+EntryTranslit // 4
+EntryAuthorName // 5
+EntryGeo // 6
+EntryAuthorTime // 7
+EntrySourceForm // 8
+EntrySourceName // 9
+EntrySourceTime // 10
+EntryMeaning // 11
+EntryAuthStatus // 12
+EntryTranslOf // 13
+EntryHttpLink // 14
+EntryCreatorId:
+EntryRatingId
+EntryTags
+EntryCommentId
+EntryMediaId
+
 
 --------------
 
-id  
-
-    (int) [language tag]+[integer]:  ru98, ru99, en47
-
-text 
-    
-    (string) the text of the entry itself
-
-verbatim
-    
-    (string)  CSV: happy, birthday,to,you
-
-transliteration* 
-
-    (string)  The way it's pronounced. 
-    for Russian: "s dnyom rozhdenya tebya".
-
-auth_status 
-    
-    (string)  auth = "authentication". 
+1)  put together from [language tag]+[integer]
+    For example: ru98, ru99, en47
+2)  (string) the text of the entry itself
+3)  (string)  CSV: happy, birthday,to,you
+4)  transliteration* = (string) A guide to how it's pronounced. 
+    Eng: "Happy birthday"
+    Ru: "с днём рожденья"
+    Translit: "s dnyom rozhdenya tebya".
+5)  The name of the person who originated the phrase (Shakespeare, Li Bo, etc)
+6)  The place where the phrase was originated (China, Russia, Iran, etc)  
+7)  The time when the phrase originated (year, century, etc.)
+8)  For example: "song", "poem", "speech", "movie" etc.
+9)  "Hymn of Canada" or "Hamlet" or the movie name etc
+10) when the poem or song was written etc.
+11) if the entry is a saying, explain the meaning
+12) (string)  auth = "authentication". 
     Can have one of 3 values: 
     "o" for "original" (like "Happy Birthday"), 
     "t" for "translation", and 
     "u" for "unknown" or "unidentified".
-
-translation_of  
-
-    (string)  if "original"="1", the id of the entry with the "original"
+13) will have a value when the value of #12 is "t"
+14) 
 
 source  
 

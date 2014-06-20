@@ -1,5 +1,5 @@
 Igor 
-v2
+v3
 
 User wants to make a search
 
@@ -104,7 +104,13 @@ User wants to make a search
             +C, -E, -A1, +A2, -T
             +C, -E, +A1, -A2, -T
 
-            .1 System tries a search for entries equivalent to the given C in regardless of E, A, or T
+            .1 System tries a search for U's (#13) regardless of E, A, or T
+
+                .1 U search fails
+
+                    .1 System offers to confirm or cancel a Create (see #16)
+
+                .2 U search succeeds
 
         .10 User gives a search phrase and authenticity status
             +C, -E, -A1, -A2, +T

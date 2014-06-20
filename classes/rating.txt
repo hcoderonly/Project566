@@ -1,24 +1,15 @@
+v2
+
 Rating
 ------
-id
-likes
-dislikes
-author
+RatingId // 1
+Likes // 2
+Dislikes // 3
+Author // 4
 
 * * * * *
 
-id
-
-    outo-increment
-
-likes
-
-    ...
-
-dislikes
-
-    
-
-author
-
-    the userId of the user who created the rating record
+1) auto-increment
+2) int: number of up-votes
+3) int: number of down-votes
+4) author: the userId of the user who created the rating record

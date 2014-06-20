@@ -1,35 +1,21 @@
+v2
+
 Media
 -----
-id      
-name        
-desc        
-link        
-author
-typeId
+MediaId //1     
+MediaName // 2    
+MediaDesc // 3       
+MediaLink        
+MediaAuthor // 4
+MediaTypeId // 5
+MediaCommentId
+MediaRatingId
 
  * * * * *
 
-MediaId      
-
-    autoincremented
-
-MediaName
-
-    the name of the media, like ???
-
-MediaDesc
-
-    description -  what this media is ...
-
-link        
-
-    ???
-
-author
-
-    the UserId of the User who ...???   
-
-typeId
-
-    ???
+1)  autoincremented
+2)  the name of the media... (???)
+3)  description -  what this media is ...
+4)  the UserId of the User who ...???   
+5)  ???
 
