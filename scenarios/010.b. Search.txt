@@ -1,5 +1,5 @@
 Igor 
-v5
+v6
 
 User wants to make a search
 
@@ -127,6 +127,38 @@ User wants to make a search
                     .1 System offers to confirm or cancel a Create (see #16)
 
                 .2 U search succeeds
+
+                    .1 System displays the list of found U's
+
+                        .1 List has only 1 or more S's
+                            .1 User asks to authenticate an S as a R [#15]
+                            .2 User asks to authenticate an S as the Q [#16]
+                        .2 List has only 1 or more R's (Creator only knew it was an R)
+                            .1 User asks to see the full info of a R [#17] 
+                            .2 User asks to see the full info of the Q [#18]
+                        .3 List has R's and S's
+                            .1 User asks to authenticate an S as an R [#15]
+                            .2 User asks to authenticate an S as the Q [#16]
+                            .3 User asks to see the full info of a R [#17]
+                            .4 User asks to see the full info of the Q [#18]
+                            .5 User asks to authenticate the R as an Q [#19]
+                                .1 System ...
+                        .4 List has the Q
+                            .1 User asks to see the full info of the Q [#18]
+                            .2 User wants to authenticate his C as a translation of the Q [#20]
+                        .5 List has the Q and S's
+                            .1 User asks to authenticate an S as an R [#15]
+                            .2 User asks to authenticate an S as the Q [#16]
+                            .3 User asks to see the full info of the Q [#18]
+                            .4 User wants to authenticate his C as a translation of the Q [#20]
+                        .6 List has all Q, R's and S's
+                            .1 User asks to authenticate an S as a R [#15]
+                            .3 User asks to authenticate an S as the Q [#16]
+                            .4 User asks to see the full info of a R [#17] 
+                            .5 User asks to see the full info of the Q [#18]
+                            .6 User asks to authenticate the R as an Q [#19]
+                            .7 User wants to authenticate his C as a translation of the Q [#20]
+                            .8 User wants to authenticate the Q as an R [#21]
 
         .10 (Lookup) User gives a search phrase and authenticity status
             +C, -E, -A1, -A2, +T
