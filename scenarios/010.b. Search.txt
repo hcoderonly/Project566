@@ -1,5 +1,5 @@
 Igor 
-v3
+v4
 
 User wants to make a search
 
@@ -12,7 +12,7 @@ User wants to make a search
 
             .1 System: "Not enough data for search" and loops back to #20 // #22
 
-        .2 User gives only the authenticity status
+        .2  (Browse) User gives only the authenticity status
             -C, -E, -A1, -A2, +T // #21
             -C, -E, -A1, +A2, +T
             -C, -E, +A1, -A2, +T
@@ -29,12 +29,12 @@ User wants to make a search
 
                 .1 System tries a search for S's in all E's
 
-        .3 User gives only the time frame
+        .3 (Browse) User gives only the time frame
             -C, -E, +A1, +A2, -T
 
             .1 System tries a search for all entries, within A, in all E's all T's
 
-        .4 User gives a time frame and authenticity status
+        .4 (Browse) User gives a time frame and authenticity status
             -C, -E, +A1, +A2, +T
 
             .1 T = 'o'
@@ -49,7 +49,7 @@ User wants to make a search
 
                 .1 System tries a search for S's, in all E's, within A
 
-        .5 User gives only the target language(s)
+        .5 (Browse) User gives only the target language(s)
             -C, +E, -A1, -A2, -T
             -C, +E, -A1, +A2, -T
             -C, +E, +A1, -A2, -T
@@ -62,7 +62,7 @@ User wants to make a search
 
                 .1 System: "Unreasonable! You are asking me to show the contents of tables for E1, E2 etc.!!!"
 
-        .6 User the target language(s) and the authenticity status
+        .6 (Browse) User the target language(s) and the authenticity status
             -C, +E, -A1, -A2, +T 
             -C, +E, -A1, +A2, +T 
             -C, +E, +A1, -A2, +T 
@@ -79,12 +79,12 @@ User wants to make a search
 
                     .1 System tries a search for S's, in the E(s), regardless of A
 
-        .7  User gives the target language(s) and a time frame
+        .7 (Browse)  User gives the target language(s) and a time frame
             -C, +E, +A1, +A2, -T 
 
             .1 System tries a search for entries in E(s) within A, regardless of T
 
-        .8 User gives the target language(s), a time frame, and authenticity status
+        .8 (Browse) User gives the target language(s), a time frame, and authenticity status
             -C, +E, +A1, +A2, +T 
 
             .1 T = 'o'
@@ -99,7 +99,7 @@ User wants to make a search
 
                 .1 System tries a search for S's, in the E(s), within A
 
-        .9 User gives a search phrase and nothing else
+        .9 (Lookup) User gives a search phrase and nothing else
             +C, -E, -A1, -A2, -T
             +C, -E, -A1, +A2, -T
             +C, -E, +A1, -A2, -T
@@ -112,7 +112,7 @@ User wants to make a search
 
                 .2 U search succeeds
 
-        .10 User gives a search phrase and authenticity status
+        .10 (Lookup) User gives a search phrase and authenticity status
             +C, -E, -A1, -A2, +T
             +C, -E, -A1, +A2, +T
             +C, -E, +A1, -A2, +T
@@ -129,12 +129,12 @@ User wants to make a search
 
                 .1 System tries a search for S's that are equivalent of the C among all E's
 
-        .11 User gives a search phrase and a time frame
+        .11 (Lookup) User gives a search phrase and a time frame
             +C, -E, +A1, +A2, -T
 
             1. System tries a search for entries equivalent to C witin A, regardless of E,  or T
 
-        .12 User gives a search phrase, a time frame, and an authenticity status
+        .12 (Lookup) User gives a search phrase, a time frame, and an authenticity status
             +C, -E, +A1, +A2, +T
 
             .1 T = 'o'
@@ -149,14 +149,14 @@ User wants to make a search
 
                 .1 System tries a search for S's that are equivalent of the C among all E's within A
 
-        .13 User gives a search phrase, one or more target languages, and nothing else
+        .13 (Lookup) User gives a search phrase, one or more target languages, and nothing else
             +C, +E, -A1, -A2, -T
             +C, +E, -A1, +A2, -T
             +C, +E, +A1, -A2, -T
 
             .1 System tries a search for entries equivalent to C in the given E(s), regardless of A and T.
 
-        .14 User gives a search phrase, one or more target languages and an auth status
+        .14 (Lookup) User gives a search phrase, one or more target languages and an auth status
             +C, +E, -A1, -A2, +T
             +C, +E, -A1, +A2, +T
             +C, +E, +A1, -A2, +T
@@ -173,12 +173,12 @@ User wants to make a search
 
                 .1 System tries a search for S's that are equivalent in the E(s)
 
-        .15 User gives a search phrase, 1/more target languages, and a time frame
+        .15 (Lookup) User gives a search phrase, 1/more target languages, and a time frame
             +C, +E, +A1, +A2, -T
 
             .1 System tries a search for entries equivalent to C in E(s) for the given A, regardless of their T
 
-        .16 User gives all the parameters
+        .16 (Lookup) User gives all the parameters
             +C, +E, +A1, +A2, +T
 
             .1 T = 'o'
