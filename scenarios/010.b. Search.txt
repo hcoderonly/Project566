@@ -1,5 +1,5 @@
 Igor 
-v4
+v5
 
 User wants to make a search
 
@@ -29,6 +29,10 @@ User wants to make a search
 
                 .1 System tries a search for S's in all E's
 
+            .4 T = 'o & t'
+
+                .1 System tries a search for Q's and R's in all E's
+
         .3 (Browse) User gives only the time frame
             -C, -E, +A1, +A2, -T
 
@@ -48,6 +52,10 @@ User wants to make a search
             .3 T = 'u' 
 
                 .1 System tries a search for S's, in all E's, within A
+
+            .4 T = 'o & t'
+
+                .1 System tries a search for Q's and R's, in all E's, within A
 
         .5 (Browse) User gives only the target language(s)
             -C, +E, -A1, -A2, -T
@@ -79,6 +87,10 @@ User wants to make a search
 
                     .1 System tries a search for S's, in the E(s), regardless of A
 
+                .4 T = 'o & t'
+
+                    .1 System tries a search for Q's and R's, in the E(s), regardless of A
+
         .7 (Browse)  User gives the target language(s) and a time frame
             -C, +E, +A1, +A2, -T 
 
@@ -98,6 +110,10 @@ User wants to make a search
             .3 T = 'u' 
 
                 .1 System tries a search for S's, in the E(s), within A
+
+            .4 T = 'o & t'
+
+                .1 System tries a search for Q'a and R's, in the E(s), within A
 
         .9 (Lookup) User gives a search phrase and nothing else
             +C, -E, -A1, -A2, -T
@@ -129,6 +145,10 @@ User wants to make a search
 
                 .1 System tries a search for S's that are equivalent of the C among all E's
 
+            .4 T = 'o & t'
+
+                .1 System tries a search for Q's and R's of the C among all E's
+
         .11 (Lookup) User gives a search phrase and a time frame
             +C, -E, +A1, +A2, -T
 
@@ -148,6 +168,10 @@ User wants to make a search
             .3 T = 'u' 
 
                 .1 System tries a search for S's that are equivalent of the C among all E's within A
+
+            .4 T = 'o & t'
+
+                .1 System tries a search for Q's and R's of the C among all E's within A
 
         .13 (Lookup) User gives a search phrase, one or more target languages, and nothing else
             +C, +E, -A1, -A2, -T
@@ -173,6 +197,10 @@ User wants to make a search
 
                 .1 System tries a search for S's that are equivalent in the E(s)
 
+            .4 T = 'o & t'
+
+                .1 System tries a search for Q's and R's of the C in the E(s)
+
         .15 (Lookup) User gives a search phrase, 1/more target languages, and a time frame
             +C, +E, +A1, +A2, -T
 
@@ -192,6 +220,10 @@ User wants to make a search
             .3 T = 'u' 
 
                 .1 System tries a search for S's that are equivalent to C in the E(s) for the given A
+
+            .4 T = 'o & t'
+
+                .1 System tries a search for Q's and R's of the C in the E(s) for the given A
 
         .17 User aborts
             .1 System does ...
