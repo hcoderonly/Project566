@@ -1,5 +1,5 @@
 Sub-scenarios
-v3
+v4
 
 #1 system tries a search using C, D, E
 #2 system asks for C
@@ -15,16 +15,16 @@ v3
 #12 system asks for A and B1
 #13 system tries a search for U's
 #14 system asks for A and B1 and B2
-#15 User asks to authenticate an S (unauthenticated) as a R (translation) [#15]
-#16 User asks to authenticate an S as the Q (original phrase) [#16]
-#17 User asks to see the full info of a R [#17]
+#15 User asks to authenticate an $S (unauthenticated) as a $R (translation) [#15]
+#16 User asks to authenticate an $S as the $Q (original phrase) [#16]
+#17 User asks to see the full info of a $R [#17]
     .1 User clicks on "T"
-#18 User asks to see the full info of the Q [#18]
+#18 User asks to see the full info of the $Q [#18]
     .1 User clicks on "O" 
-#19 User asks to authenticate the R as an Q [#19]
+#19 User asks to authenticate the $R as an $Q [#19]
     // User believes it's an error and he wants to correct it
     .1 User clicks on "T"
-#20 User wants to authenticate his C as a translation of the Q [#20]
-    .1 User clicks on the "+" sign // create a first R of the Q
-#21 User wants to authenticate the Q as an R [#21]
+#20 User wants to authenticate his $C as a translation of the $Q [#20]
+    .1 User clicks on the "+" sign // create a first $R of the $Q
+#21 User wants to authenticate the $Q as an $R [#21]
     // User believes it's an error and he wants to correct it
