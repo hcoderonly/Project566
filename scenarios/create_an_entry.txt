@@ -1,5 +1,5 @@
 User wants to creat a new entry
-v1
+v2
     Required data:
 
 
@@ -36,39 +36,39 @@ v1
 
         .2 System finds the user is logged in
 
-            .1 System asks for $D and $C (#11)
+            .1 System asks for $lang_interest and $search_phrase (#11)
 
-                .1 User omits both $D and $C
+                .1 User omits both $lang_interest and $search_phrase
 
                     .1 System loops back to #11
 
-                .2 User omits $D, gives $C
+                .2 User omits $lang_interest, gives $search_phrase
 
-                    .1 System tries to detect $D
+                    .1 System tries to detect $lang_interest
 
-                        .1 $D detect fails
+                        .1 $lang_interest detect fails
 
-                            .1 System asks for $D
+                            .1 System asks for $lang_interest
 
-                        .2 $D detect succeeds
+                        .2 $lang_interest detect succeeds
 
-                            .1 System asks to confirm or pick $D // if detected $D is wrong
+                            .1 System asks to confirm or pick $lang_interest // if detected $lang_interest is wrong
 
-                                .1 User confirms the detected $D
+                                .1 User confirms the detected $lang_interest
 
                                     .1 System does #13
 
-                                .2 User picks one $D
+                                .2 User picks one $lang_interest
 
-                .3 User gives $D, omits $C
+                .3 User gives $lang_interest, omits $search_phrase
 
-                    .1 System asks for $C (#2)
+                    .1 System asks for $search_phrase (#2)
 
-                .4 User gives both $D and $C
+                .4 User gives both $lang_interest and $search_phrase
 
-                    .1 System tries a search for $U's (#13)
+                    .1 System tries a search for $equiv_entries (#13)
 
-                        .1 $U search fails
+                        .1 $equiv_entry search fails
 
                             .1 System asks to confirm or cancel
 
@@ -78,7 +78,7 @@ v1
 
                                 . 1 System returns to #11
 
-                        .2 $U search succeeds
+                        .2 $equiv_entry search succeeds
 
                             .1 System returns a descending list of matches with their authenticity status
 
