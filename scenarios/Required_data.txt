@@ -1,16 +1,19 @@
 Required data
-v4
+v5
 ------------------------------
+time_frame
 A : time period
     a specific time period ("past day/week/month")
     a time frame
     a search constraint: "Show me records made within this time frame."
 
+orig_lang
 B:  original language
     the language of the original
     the language in which the phrase first originated 
     e.g. the original language of the "Happy Birthday" song is English
 
+search_phrase
 C:  the text of the search phrase, the phrase the user wants to translate
     "Show me available entries that are the equivalent of this phrase"
     "Show me phrases that are equivalent to this search phrase"
@@ -22,6 +25,7 @@ C:  the text of the search phrase, the phrase the user wants to translate
     "I am creating this entry for this language"
     "I am creating an entry for the 'Happy Birthday' song, the entry will be in English" 
 
+lang_interest
 D:  the language of interest
 
     the language(s) in which the user wants to receive entries in the newsletter
@@ -37,10 +41,12 @@ D:  the language of interest
     The language of the entry being created.
     "I am creating an entry for the 'Happy Birthday' song, the entry will be in English" 
 
+target_lang
 E:  the target language(s), the language in which to look for entries 
     // if more than one TL -- use a checkbox
     "Show me entries in this language"
 
+locale_lang
 F:  user's locale's language, as detected by the system if the user fails to give B
     the language of the browser
     the language of the "Accept-Language" header
@@ -73,47 +79,57 @@ O:  a search using a search phrase,
 
 P:  the user will give B2
 
+ogir_phrase
 Q:  the original phrase. 
     the phrase that has been authenticated as the original phrase, not as a translation
     the phrase which is used for translations.
     the one and only phrase that is the source of translations
     the phrase used to measure how good translations are.
 
+translation
 R:  translation. 
     the phrase that has been authenticated as a translation of an original phrase
     entries that are translations of Q.
 
+unauthent
 S:  unathenticated entry.
     a phrase/entry that is NOT YET authenticated as an original or a translation.
 
+auth_stat
 T:  Authenticity status
     the status of an entry in terms of whether it's one of the three: Q, R, or S.
 
+equiv_entry
 U:  Equivalent entry
     an entry whose verbatim is similar to C
 
-V:  Entry that is retrieved during the search for U's while creating a new entry
-    A list of these entries is displayed to the user
-    One of these entries must be picked by the user to be 
-        the original of the entry the user is creating
-        a translation of the original entry the user is creating
-        another [variant] translation of the entry the user is creating 
+retrieved_entry
+V:  Entry that is retrieved during the search for U's [equiv_entries] while creating a new entry
+    A list of these entries is displayed to the user as he enters the search_phrase text
+    One of these entries must be picked by the user to be authenticated as:
+        the orig_phrase of the search_phrase for which the user is creating and entry
+        a translation of the orig_phrase for which the user is creating an entry
+        another [variant] translation of the search_phrase for which the user is creating an entry 
     Each of these entries has a radio button for the user to pick to link to the entry he is making 
 
+user_email
 W:  user's email
     
     the email the user uses to subscribe for newsletter
 
     the email the user gives as he registers in the system
 
+pers_info
 X:  Personal info
 
     the optional info user can enter at registration stage
     things like name, gender, country, professional area, etc.
 
+username
 Y:  Username
     the handle the user gives to be known in the system
 
+password
 Z:  Password
     the password the user gives to register in the system
 
