@@ -1,5 +1,5 @@
 Required data
-v6
+v7
 ------------------------------
 auth_stat 
     T  
@@ -8,6 +8,12 @@ auth_stat
     orig_phrase,
     translation, or 
     unauthent.
+
+browse
+    N
+    a search when the user has no search phrase 
+    i.e. the user just wants to search for some entries in one language
+    User asks a search for entries for A for B1 and B2.
 
 equiv_entry
     U
@@ -36,6 +42,11 @@ locale_lang
     the language of the browser
     the language of the "Accept-Language" header
     [140612th: I have doubts as to the need for this also]
+
+lookup
+    O
+    a search using a search phrase, 
+    i.e the user has a search phrase and wants to find a translation of the phrase
 
 orig_lang
     B
@@ -145,12 +156,9 @@ L:  the system will ask for A and use F as B1
 
 M:  the system will ask the user to give both A and B2          
 
-N:  a search when the user has no search phrase 
-    i.e. the user just wants to search for some entries in one language
-    User asks a search for entries for A for B1 and B2.
 
-O:  a search using a search phrase, 
-    i.e the user has a search phrase and wants to find a translation of the phrase
+
+
 
 P:  the user will give B2
 
