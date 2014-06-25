@@ -1,36 +1,32 @@
-v3
+v4
 
 (Habib)
 
-Required Info:
-    A: username
-    B: password
-    C: email address
-    D: language(s) User is interested in
-    E: Optional info (like name, gender, country, professional area, etc)
-
 User wants to register in the system
-    .1 System asks User to give A-D, and optionally E
 
-        .1 User omits at least one of A-D, omits E
-            .1 System notifies X is omitted // #1
-            .2 System asks user to X
-                .1 User gives X
+    .1 System asks User to give $username, $password, $user_email, $lang_interest, and optionally $pers_info
+
+        .1 User omits at least one of $username, $password, $user_email, $lang_interest, omits $pers_info
+            .1 System notifies parameter is omitted // #1
+            .2 System asks user to parameter
+                .1 User gives parameter
                     .1 System tries to create an account
-                .2 User omits X
+                .2 User omits parameter
                     .1 System loops back to #1
                 .3 User aborts
                     .1 System ???
-        .2 User omits at least one of A-D, gives E
-            .1 System notifies X is omitted // #2
-            .2 System asks user to X
-                .1 User gives X
+
+        .2 User omits at least one of $username, $password, $user_email, $lang_interest, gives $pers_info
+            .1 System notifies parameter is omitted // #2
+            .2 System asks user to parameter
+                .1 User gives parameter
                     .1 System tries to create an account
-                .2 User omits X
+                .2 User omits parameter
                     .1 System loops back to #2
                 .3 User aborts
                     .1 System ???
-        .3 User gives A-D, omits E
+
+        .3 User gives $username, $password, $user_email, $lang_interest, omits $pers_info
             .1 System tries to create an account
                 .1 Create succeeds
                     .1 System tries to send an email notification // #3
@@ -39,7 +35,8 @@ User wants to register in the system
                 .2 Create fails
                     .1 System notifies
                     .2 
-        .4 User gives all: A-E
+                    
+        .4 User gives all: $username, $password, $user_email, $lang_interest, $pers_info
             .1 System tries to create an account 
                 .1 Create succeeds
                     .1 System does #3
