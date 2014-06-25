@@ -1,5 +1,5 @@
 Required data
-v7
+v8
 ------------------------------
 auth_stat 
     T  
@@ -136,45 +136,4 @@ username
     Y
     Username
     the handle the user gives to be known in the system
-
-
-G:  a search for entries where:
-    A = the value entered by the user (e.g. "past day")
-    B1 = the original language
-
-H:  a search for entries where:
-    A = the value entered by the user (e.g. "past day")
-    B1 = the language in which the phrase was entered when the entry was first created
-
-I:  a search in which the system is using F as B1
-
-J:  a search in which the system is using F as the language in which the phrase was entered when the entry was first created 
-
-K:  the system will try a search using F and asking the user to give B2
-
-L:  the system will ask for A and use F as B1
-
-M:  the system will ask the user to give both A and B2          
-
-
-
-
-
-P:  the user will give B2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
