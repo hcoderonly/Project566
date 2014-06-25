@@ -1,8 +1,8 @@
 Sub-scenarios
-v5
+v7
 
 #1 system tries a search using $search_phrase, $lang_interest, $target_lang
-#2 system asks for $search_phrase
+#2 system asks for $search_phrase [#2]
 #3 system asks for $target_lang
 #4 system returns/displays the result of lookup
 #5 system returns/displays the result of browse
@@ -11,9 +11,9 @@ v5
 #8 system asks for B2
 #9 system asks for $time_frame
 #10 system asks for $time_frame and B2
-#11 system asks for $lang_interest and $search_phrase when creating a new entry
+#11 system asks for $lang_interest and $search_phrase [#11]
 #12 system asks for $time_frame and B1
-#13 system tries a search for $equiv_entries
+#13 system tries a search for $equiv_entries [#13]
 #14 system asks for $time_frame and B1 and B2
 #15 User asks to authenticate an $unauthent as a $translation [#15]
 #16 User asks to authenticate an $unauthent as the $orig_phrase (original phrase) [#16]

@@ -1,7 +1,5 @@
-User wants to creat a new entry
-v2
-    Required data:
-
+User wants to create a new entry
+v3
 
 
 .1 User asks to create a new entry
@@ -20,7 +18,7 @@ v2
 
                         .2 User logs in
 
-                            .1 System does #11
+                            .1 System asks for $lang_interest and $search_phrase when creating a new entry [#11]
 
                 .2 User picks sign-up
 
@@ -28,7 +26,7 @@ v2
 
                         .1 User logs in 
 
-                            .1 System does #11
+                            .1 System asks for $lang_interest and $search_phrase when creating a new entry [#11]
 
                 .3 User cancels
 
@@ -36,11 +34,11 @@ v2
 
         .2 System finds the user is logged in
 
-            .1 System asks for $lang_interest and $search_phrase (#11)
+            .1 System asks for $lang_interest and $search_phrase [#11]
 
                 .1 User omits both $lang_interest and $search_phrase
 
-                    .1 System loops back to #11
+                    .1 Loop back: system asks for $lang_interest and $search_phrase [#11]
 
                 .2 User omits $lang_interest, gives $search_phrase
 
@@ -56,7 +54,7 @@ v2
 
                                 .1 User confirms the detected $lang_interest
 
-                                    .1 System does #13
+                                    .1 System tries a search for $equiv_entries [#13]
 
                                 .2 User picks one $lang_interest
 
@@ -76,7 +74,7 @@ v2
 
                             .2 User cancels
 
-                                . 1 System returns to #11
+                                .1 System returns to #11
 
                         .2 $equiv_entry search succeeds
 
