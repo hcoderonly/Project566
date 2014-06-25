@@ -1,261 +1,261 @@
 Igor 
-v6
+v7
 
 User wants to make a search
 
-    .1 System asks for C, E, A1, A2, T // #20
+    .1 System asks for $search_phrase, $target_lang, A1, A2, $auth_stat // #20
         
         .1 User gives no search conditions
-            -C, -E, -A1, -A2, -T
-            -C, -E, -A1, +A2, -T
-            -C, -E, +A1, -A2, -T
+            -$search_phrase, -$target_lang, -A1, -A2, -$auth_stat
+            -$search_phrase, -$target_lang, -A1, +A2, -$auth_stat
+            -$search_phrase, -$target_lang, +A1, -A2, -$auth_stat
 
             .1 System: "Not enough data for search" and loops back to #20 // #22
 
         .2  (Browse) User gives only the authenticity status
-            -C, -E, -A1, -A2, +T // #21
-            -C, -E, -A1, +A2, +T
-            -C, -E, +A1, -A2, +T
+            -$search_phrase, -$target_lang, -A1, -A2, +$auth_stat // #21
+            -$search_phrase, -$target_lang, -A1, +A2, +$auth_stat
+            -$search_phrase, -$target_lang, +A1, -A2, +$auth_stat
 
-            .1 T = 'o'
+            .1 $auth_stat = 'original'
 
-                .1 System tries a search for Q's in all E's
+                .1 System tries a search for $orig_phrase's in all $target_lang's
 
-            .2 T = 't'
+            .2 $auth_stat = 'translation'
 
-                .1 System tries a search for R's in all E's
+                .1 System tries a search for $translation's in all $target_lang's
 
-            .3 T = 'u'
+            .3 $auth_stat = 'unauthent'
 
-                .1 System tries a search for S's in all E's
+                .1 System tries a search for $unauthent's in all $target_lang's
 
-            .4 T = 'o & t'
+            .4 $auth_stat = 'original & translation'
 
-                .1 System tries a search for Q's and R's in all E's
+                .1 System tries a search for $orig_phrase's and $translation's in all $target_lang's
 
         .3 (Browse) User gives only the time frame
-            -C, -E, +A1, +A2, -T
+            -$search_phrase, -$target_lang, +A1, +A2, -$auth_stat
 
-            .1 System tries a search for all entries, within A, in all E's all T's
+            .1 System tries a search for all entries, within $time_frame, in all $target_lang's all $auth_stat's
 
         .4 (Browse) User gives a time frame and authenticity status
-            -C, -E, +A1, +A2, +T
+            -$search_phrase, -$target_lang, +A1, +A2, +$auth_stat
 
-            .1 T = 'o'
+            .1 $auth_stat = 'original'
 
-                .1 System tries a search for Q's in all E's, within A
+                .1 System tries a search for $orig_phrase's in all $target_lang's, within $time_frame
 
-            .2 T = 't'
+            .2 $auth_stat = 'translation'
 
-                .1 System tries a search for R's in all E's, within A
+                .1 System tries a search for $translation's in all $target_lang's, within $time_frame
 
-            .3 T = 'u' 
+            .3 $auth_stat = 'unauthent' 
 
-                .1 System tries a search for S's, in all E's, within A
+                .1 System tries a search for $unauthent's, in all $target_lang's, within $time_frame
 
-            .4 T = 'o & t'
+            .4 $auth_stat = 'original & translation'
 
-                .1 System tries a search for Q's and R's, in all E's, within A
+                .1 System tries a search for $orig_phrase's and $translation's, in all $target_lang's, within $time_frame
 
         .5 (Browse) User gives only the target language(s)
-            -C, +E, -A1, -A2, -T
-            -C, +E, -A1, +A2, -T
-            -C, +E, +A1, -A2, -T
+            -$search_phrase, +$target_lang, -A1, -A2, -$auth_stat
+            -$search_phrase, +$target_lang, -A1, +A2, -$auth_stat
+            -$search_phrase, +$target_lang, +A1, -A2, -$auth_stat
 
-            .1 E = 1 lang
+            .1 $target_lang = 1 lang
 
-                .1 System: "Unreasonable! You are asking me to show the contents of the whole E table!!!"
+                .1 System: "Unreasonable! You are asking me to show the contents of the whole $target_lang table!!!"
 
-            .2 E = >1 langs
+            .2 $target_lang = >1 langs
 
                 .1 System: "Unreasonable! You are asking me to show the contents of tables for E1, E2 etc.!!!"
 
         .6 (Browse) User the target language(s) and the authenticity status
-            -C, +E, -A1, -A2, +T 
-            -C, +E, -A1, +A2, +T 
-            -C, +E, +A1, -A2, +T 
+            -$search_phrase, +$target_lang, -A1, -A2, +$auth_stat 
+            -$search_phrase, +$target_lang, -A1, +A2, +$auth_stat 
+            -$search_phrase, +$target_lang, +A1, -A2, +$auth_stat 
 
-                .1 T = 'o'
+                .1 $auth_stat = 'original'
 
-                    .1 System tries a search for Q's in the E(s), regardless of A
+                    .1 System tries a search for $orig_phrase's in the $target_lang(s), regardless of $time_frame
 
-                .2 T = 't'
+                .2 $auth_stat = 'translation'
 
-                    .1 System tries a search for R's in the E(s), regardless of A
+                    .1 System tries a search for $translation's in the $target_lang(s), regardless of $time_frame
 
-                .3 T = 'u' 
+                .3 $auth_stat = 'unauthent' 
 
-                    .1 System tries a search for S's, in the E(s), regardless of A
+                    .1 System tries a search for $unauthent's, in the $target_lang(s), regardless of $time_frame
 
-                .4 T = 'o & t'
+                .4 $auth_stat = 'original & translation'
 
-                    .1 System tries a search for Q's and R's, in the E(s), regardless of A
+                    .1 System tries a search for $orig_phrase's and $translation's, in the $target_lang(s), regardless of $time_frame
 
         .7 (Browse)  User gives the target language(s) and a time frame
-            -C, +E, +A1, +A2, -T 
+            -$search_phrase, +$target_lang, +A1, +A2, -$auth_stat 
 
-            .1 System tries a search for entries in E(s) within A, regardless of T
+            .1 System tries a search for entries in $target_lang(s) within $time_frame, regardless of $auth_stat
 
         .8 (Browse) User gives the target language(s), a time frame, and authenticity status
-            -C, +E, +A1, +A2, +T 
+            -$search_phrase, +$target_lang, +A1, +A2, +$auth_stat 
 
-            .1 T = 'o'
+            .1 $auth_stat = 'original'
 
-                .1 System tries a search for Q's in the E(s), within A
+                .1 System tries a search for $orig_phrase's in the $target_lang(s), within $time_frame
 
-            .2 T = 't'
+            .2 $auth_stat = 'translation'
 
-                .1 System tries a search for R's in the E(s), within A
+                .1 System tries a search for $translation's in the $target_lang(s), within $time_frame
 
-            .3 T = 'u' 
+            .3 $auth_stat = 'unauthent' 
 
-                .1 System tries a search for S's, in the E(s), within A
+                .1 System tries a search for $unauthent's, in the $target_lang(s), within $time_frame
 
-            .4 T = 'o & t'
+            .4 $auth_stat = 'original & translation'
 
-                .1 System tries a search for Q'a and R's, in the E(s), within A
+                .1 System tries a search for $orig_phrase'a and $translation's, in the $target_lang(s), within $time_frame
 
         .9 (Lookup) User gives a search phrase and nothing else
-            +C, -E, -A1, -A2, -T
-            +C, -E, -A1, +A2, -T
-            +C, -E, +A1, -A2, -T
+            +$search_phrase, -$target_lang, -A1, -A2, -$auth_stat
+            +$search_phrase, -$target_lang, -A1, +A2, -$auth_stat
+            +$search_phrase, -$target_lang, +A1, -A2, -$auth_stat
 
-            .1 System tries a search for U's (#13) regardless of E, A, or T
+            .1 System tries a search for $equiv_entry's (#13) regardless of $target_lang, $time_frame, or $auth_stat
 
-                .1 U search fails
+                .1 $equiv_entry search fails
 
                     .1 System offers to confirm or cancel a Create (see #16)
 
-                .2 U search succeeds
+                .2 $equiv_entry search succeeds
 
-                    .1 System displays the list of found U's
+                    .1 System displays the list of found $equiv_entry's
 
-                        .1 List has only 1 or more S's
-                            .1 User asks to authenticate an S as a R [#15]
-                            .2 User asks to authenticate an S as the Q [#16]
-                        .2 List has only 1 or more R's (Creator only knew it was an R)
-                            .1 User asks to see the full info of a R [#17] 
-                            .2 User asks to see the full info of the Q [#18]
-                        .3 List has R's and S's
-                            .1 User asks to authenticate an S as an R [#15]
-                            .2 User asks to authenticate an S as the Q [#16]
-                            .3 User asks to see the full info of a R [#17]
-                            .4 User asks to see the full info of the Q [#18]
-                            .5 User asks to authenticate the R as an Q [#19]
+                        .1 List has only 1 or more $unauthent's
+                            .1 User asks to authenticate an $unauthent as a $translation [#15]
+                            .2 User asks to authenticate an $unauthent as the $orig_phrase [#16]
+                        .2 List has only 1 or more $translation's (Creator only knew it was an $translation)
+                            .1 User asks to see the full info of a $translation [#17] 
+                            .2 User asks to see the full info of the $orig_phrase [#18]
+                        .3 List has $translation's and $unauthent's
+                            .1 User asks to authenticate an $unauthent as an $translation [#15]
+                            .2 User asks to authenticate an $unauthent as the $orig_phrase [#16]
+                            .3 User asks to see the full info of a $translation [#17]
+                            .4 User asks to see the full info of the $orig_phrase [#18]
+                            .5 User asks to authenticate the $translation as an $orig_phrase [#19]
                                 .1 System ...
-                        .4 List has the Q
-                            .1 User asks to see the full info of the Q [#18]
-                            .2 User wants to authenticate his C as a translation of the Q [#20]
-                        .5 List has the Q and S's
-                            .1 User asks to authenticate an S as an R [#15]
-                            .2 User asks to authenticate an S as the Q [#16]
-                            .3 User asks to see the full info of the Q [#18]
-                            .4 User wants to authenticate his C as a translation of the Q [#20]
-                        .6 List has all Q, R's and S's
-                            .1 User asks to authenticate an S as a R [#15]
-                            .3 User asks to authenticate an S as the Q [#16]
-                            .4 User asks to see the full info of a R [#17] 
-                            .5 User asks to see the full info of the Q [#18]
-                            .6 User asks to authenticate the R as an Q [#19]
-                            .7 User wants to authenticate his C as a translation of the Q [#20]
-                            .8 User wants to authenticate the Q as an R [#21]
+                        .4 List has the $orig_phrase
+                            .1 User asks to see the full info of the $orig_phrase [#18]
+                            .2 User wants to authenticate his $search_phrase as a translation of the $orig_phrase [#20]
+                        .5 List has the $orig_phrase and $unauthent's
+                            .1 User asks to authenticate an $unauthent as an $translation [#15]
+                            .2 User asks to authenticate an $unauthent as the $orig_phrase [#16]
+                            .3 User asks to see the full info of the $orig_phrase [#18]
+                            .4 User wants to authenticate his $search_phrase as a translation of the $orig_phrase [#20]
+                        .6 List has all $orig_phrase, $translation's and $unauthent's
+                            .1 User asks to authenticate an $unauthent as a $translation [#15]
+                            .3 User asks to authenticate an $unauthent as the $orig_phrase [#16]
+                            .4 User asks to see the full info of a $translation [#17] 
+                            .5 User asks to see the full info of the $orig_phrase [#18]
+                            .6 User asks to authenticate the $translation as an $orig_phrase [#19]
+                            .7 User wants to authenticate his $search_phrase as a translation of the $orig_phrase [#20]
+                            .8 User wants to authenticate the $orig_phrase as an $translation [#21]
 
         .10 (Lookup) User gives a search phrase and authenticity status
-            +C, -E, -A1, -A2, +T
-            +C, -E, -A1, +A2, +T
-            +C, -E, +A1, -A2, +T
+            +$search_phrase, -$target_lang, -A1, -A2, +$auth_stat
+            +$search_phrase, -$target_lang, -A1, +A2, +$auth_stat
+            +$search_phrase, -$target_lang, +A1, -A2, +$auth_stat
 
-            .1 T = 'o'
+            .1 $auth_stat = 'original'
 
-                .1 System tries a search for the Q of the C among all E's
+                .1 System tries a search for the $orig_phrase of the $search_phrase among all $target_lang's
 
-            .2 T = 't'
+            .2 $auth_stat = 'translation'
 
-                .1 System tries a search for R's of the C among all E's
+                .1 System tries a search for $translation's of the $search_phrase among all $target_lang's
 
-            .3 T = 'u' 
+            .3 $auth_stat = 'unauthent' 
 
-                .1 System tries a search for S's that are equivalent of the C among all E's
+                .1 System tries a search for $unauthent's that are equivalent of the $search_phrase among all $target_lang's
 
-            .4 T = 'o & t'
+            .4 $auth_stat = 'original & translation'
 
-                .1 System tries a search for Q's and R's of the C among all E's
+                .1 System tries a search for $orig_phrase's and $translation's of the $search_phrase among all $target_lang's
 
         .11 (Lookup) User gives a search phrase and a time frame
-            +C, -E, +A1, +A2, -T
+            +$search_phrase, -$target_lang, +A1, +A2, -$auth_stat
 
-            1. System tries a search for entries equivalent to C witin A, regardless of E,  or T
+            1. System tries a search for entries equivalent to $search_phrase witin $time_frame, regardless of $target_lang,  or $auth_stat
 
         .12 (Lookup) User gives a search phrase, a time frame, and an authenticity status
-            +C, -E, +A1, +A2, +T
+            +$search_phrase, -$target_lang, +A1, +A2, +$auth_stat
 
-            .1 T = 'o'
+            .1 $auth_stat = 'original'
 
-                .1 System tries a search for the Q of the C among all E's within A
+                .1 System tries a search for the $orig_phrase of the $search_phrase among all $target_lang's within $time_frame
 
-            .2 T = 't'
+            .2 $auth_stat = 'translation'
 
-                .1 System tries a search for R's of the C among all E's within A
+                .1 System tries a search for $translation's of the $search_phrase among all $target_lang's within $time_frame
 
-            .3 T = 'u' 
+            .3 $auth_stat = 'unauthent' 
 
-                .1 System tries a search for S's that are equivalent of the C among all E's within A
+                .1 System tries a search for $unauthent's that are equivalent of the $search_phrase among all $target_lang's within $time_frame
 
-            .4 T = 'o & t'
+            .4 $auth_stat = 'original & translation'
 
-                .1 System tries a search for Q's and R's of the C among all E's within A
+                .1 System tries a search for $orig_phrase's and $translation's of the $search_phrase among all $target_lang's within $time_frame
 
         .13 (Lookup) User gives a search phrase, one or more target languages, and nothing else
-            +C, +E, -A1, -A2, -T
-            +C, +E, -A1, +A2, -T
-            +C, +E, +A1, -A2, -T
+            +$search_phrase, +$target_lang, -A1, -A2, -$auth_stat
+            +$search_phrase, +$target_lang, -A1, +A2, -$auth_stat
+            +$search_phrase, +$target_lang, +A1, -A2, -$auth_stat
 
-            .1 System tries a search for entries equivalent to C in the given E(s), regardless of A and T.
+            .1 System tries a search for entries equivalent to $search_phrase in the given $target_lang(s), regardless of $time_frame and $auth_stat.
 
         .14 (Lookup) User gives a search phrase, one or more target languages and an auth status
-            +C, +E, -A1, -A2, +T
-            +C, +E, -A1, +A2, +T
-            +C, +E, +A1, -A2, +T
+            +$search_phrase, +$target_lang, -A1, -A2, +$auth_stat
+            +$search_phrase, +$target_lang, -A1, +A2, +$auth_stat
+            +$search_phrase, +$target_lang, +A1, -A2, +$auth_stat
 
-            .1 T = 'o'
+            .1 $auth_stat = 'original'
 
-                .1 System tries a search for the Q of the C in the E(s)
+                .1 System tries a search for the $orig_phrase of the $search_phrase in the $target_lang(s)
 
-            .2 T = 't'
+            .2 $auth_stat = 'translation'
 
-                .1 System tries a search for R's of the C in the E(s)
+                .1 System tries a search for $translation's of the $search_phrase in the $target_lang(s)
 
-            .3 T = 'u' 
+            .3 $auth_stat = 'unauthent' 
 
-                .1 System tries a search for S's that are equivalent in the E(s)
+                .1 System tries a search for $unauthent's that are equivalent in the $target_lang(s)
 
-            .4 T = 'o & t'
+            .4 $auth_stat = 'original & translation'
 
-                .1 System tries a search for Q's and R's of the C in the E(s)
+                .1 System tries a search for $orig_phrase's and $translation's of the $search_phrase in the $target_lang(s)
 
         .15 (Lookup) User gives a search phrase, 1/more target languages, and a time frame
-            +C, +E, +A1, +A2, -T
+            +$search_phrase, +$target_lang, +A1, +A2, -$auth_stat
 
-            .1 System tries a search for entries equivalent to C in E(s) for the given A, regardless of their T
+            .1 System tries a search for entries equivalent to $search_phrase in $target_lang(s) for the given $time_frame, regardless of their $auth_stat
 
         .16 (Lookup) User gives all the parameters
-            +C, +E, +A1, +A2, +T
+            +$search_phrase, +$target_lang, +A1, +A2, +$auth_stat
 
-            .1 T = 'o'
+            .1 $auth_stat = 'original'
 
-                .1 System tries a search for the Q of the C in the E(s) for the given A
+                .1 System tries a search for the $orig_phrase of the $search_phrase in the $target_lang(s) for the given $time_frame
 
-            .2 T = 't'
+            .2 $auth_stat = 'translation'
 
-                .1 System tries a search for R's of the C in the E(s) for the given A
+                .1 System tries a search for $translation's of the $search_phrase in the $target_lang(s) for the given $time_frame
 
-            .3 T = 'u' 
+            .3 $auth_stat = 'unauthent' 
 
-                .1 System tries a search for S's that are equivalent to C in the E(s) for the given A
+                .1 System tries a search for $unauthent's that are equivalent to $search_phrase in the $target_lang(s) for the given $time_frame
 
-            .4 T = 'o & t'
+            .4 $auth_stat = 'original & translation'
 
-                .1 System tries a search for Q's and R's of the C in the E(s) for the given A
+                .1 System tries a search for $orig_phrase's and $translation's of the $search_phrase in the $target_lang(s) for the given $time_frame
 
         .17 User aborts
             .1 System does ...
