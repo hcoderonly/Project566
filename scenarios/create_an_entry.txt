@@ -1,5 +1,5 @@
 User wants to create a new entry
-v3
+v4
 
 
 .1 User asks to create a new entry
@@ -58,6 +58,8 @@ v3
 
                                 .2 User picks one $lang_interest
 
+                                .3 User cancels 
+
                 .3 User gives $lang_interest, omits $search_phrase
 
                     .1 System asks for $search_phrase (#2)
@@ -68,19 +70,21 @@ v3
 
                         .1 $equiv_entry search fails
 
-                            .1 System asks to confirm or cancel
+                            .1 System asks to confirm or cancel the create [#22]
 
-                                .1 System tries to save the new entry
+                                .1 User confirms
 
-                            .2 User cancels
+                                    .1 System tries to save the new entry
 
-                                .1 System returns to #11
+                                .2 User cancels
+
+                                    .1 Return: System asks for $lang_interest and $search_phrase [#11]
 
                         .2 $equiv_entry search succeeds
 
                             .1 System returns a descending list of matches with their authenticity status
 
-                                .1 System asks to pick a $V and link it to his new entry
+                                .1 System asks to pick a $retrieved_entry and link it to his $search_phrase [#23]
 
                                     .1 User picks and links
 
