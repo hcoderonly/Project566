@@ -1,5 +1,5 @@
 (Linpei)
-v2
+v3
 
 Relevant business rules: 
 	- User can modify the comments that he/she created
@@ -8,28 +8,18 @@ Relevant business rules:
 1. Modify the comment
 
 	Pre-condition: User logged in the system.
-	trigger: User clicks the eidt button/icon on the top right corner of the comment, which is only visible on his/her own comments.
+	trigger: User wants to edit the comment he/she created.
 
-	.1 User makes the change in the comment and clicks the Save button.
-		.1 The comment with the change is saved in the system.
-		.2 The page stays to display the comment with the change.
+	.1 User asks the system to let him edit a comment
+		.1 System opens the comment for editing and asks user to edit the comment #1
+			.1 User asks the system to save the comment
+				.1 System processes the comment content
+					.1 Comment's size is wrong (0 or >max_size)
+						.1 System loops to #1
+					.1 Comment's size is OK
+						.1 System saves the updated comment
+						.2 System shows the updated comment to the user 
 
-	.2 User aborts modifying the comment and clicks the Cancel button.
-		.1 The system does not save anything.
-		.2 The page stays on the same page having the comment without any changes.
+			.2 User aborts
+				.1 The system closes the comment
 
-2. Report the comment
-
-	Pre-condition: the comment contains the contents that do not follow the Winged Word Master term, such as offensive, floody, advertising, spam.
-	trigger: User clicks Report to Admin link on the top right corner of the comment, which is visible to all of the comments.
-
-	.1 User selects the reason to report this comment and clicks the Submit button in a popup window.
-		.1 The report with the reason will be saved in the system.
-		.2 The report with the reason will be sent to the admin by email.
-		.3 A message will be poped up to display to the user showing the report has been sent to the admin.
-		.4 User clicks the OK button, the popup message will be closed. The page stays on the same page.
-
-	.2 User aborts reporting the comment and clicks the Cancel button in a popup window.
-		.1 The system does not save anything.
-		.2 No notification emails will be sent.
-		.3 The popup window is closed. The page stays on the same page.
