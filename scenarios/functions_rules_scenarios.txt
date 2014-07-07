@@ -1,0 +1,224 @@
+v1
+-----------------------------------------------------
+Layout:
+
+Functionality
+    Business rule
+        Scenario
+            Sub-scenario
+_____________________________________________________
+Account 
+
+    User can register
+        User wants to register in the system
+
+    Bad words are not allowed in user names (wish list).
+
+    User can deactivate his/her account
+
+    Native speaker gets authority status    
+
+______________________________________________________
+Authenticity status  
+
+    Admin can change auth_stat
+        Admin wants to change auth_stat
+
+    User can change auth_stat        
+        User wants to change auth_stat (Igor)        
+            #19 User asks to re-authenticate the $translation as an $orig_phrase [#19]
+            #20 User wants to authenticate his $search_phrase as a translation of the $orig_phrase [#20]
+            #21 User wants to authenticate the $orig_phrase as an $translation [#21]
+            #16 User asks to authenticate an $unauthent as the $orig_phrase (original phrase) [#16]
+            #15 User asks to authenticate an $unauthent as a $translation [#15]
+
+_____________________________________________________
+Comment 
+
+    Every entry has a Comments section.
+
+    Bad words are not allowed in comments
+
+    Admin can view comment
+        Admin wants to view comment
+
+    Admin can create comment
+        Admin wants to create comment
+
+    Admin can edit comment
+        Admin wants to edit comment
+
+    Admin can delete comment
+        Admin wants to delete comment 
+
+    Admin can delete any comment
+
+    User can create comment
+        User wants to create comment
+
+    User can view comment
+        User wants to view comment
+
+    User can edit his own comment
+        User wants to edit his own comment (Lily)
+
+    User can delete his own comment
+        User wants to delete his own comment
+
+    User can report a comment
+        User wants to report a comment (Lily)
+
+_____________________________________________________
+Email   
+
+    Admin can send bulk email to users
+        Admin wants to send bulk email to users
+
+    User can change his email
+        User wants to change his email
+
+    Guest can subscribe to email news w/o creating a profile
+        User wants to subscribe to email news (006)
+
+    Email newsletter contains new entries in user's language(s) of interest for a time period
+
+    Registered user receives email newsletter
+
+    Every email newsletter has the unsubscribe link
+
+_____________________________________________________
+Entry   
+
+    Bad words are allowed in the entries (artistic expression)
+
+    A user can ask other users for a translation of an entry
+
+    Garbage input will not be saved. (wish list)
+
+    Entry has a usage label (style:  song, quote etc.)
+
+    A guest can only view entries.
+
+    Admin can view entry
+        Admin wants to view entry
+
+    Admin can create an entry
+        Admin wants to create entry
+
+    Admin can edit an entry
+        Admin wants to edit an entry (Kamlesh)
+
+    Admin can delete an entry
+        Admin wants to delete entry
+
+    Admin can delete any entry
+
+    User can create an entry
+        User wants to create an entry
+            #22 System asks to confirm or cancel a create [#22]
+
+    User can edit his own entry
+        User wants to edit his own entry
+
+    User can view an entry
+        User wants to view an entry
+            #18 User asks to see the full info of the $orig_phrase [#18]
+            #17 User asks to see the full info of a $translation [#17]
+
+    User cannot delete an entry
+
+    User can report an entry
+        User wants to report an entry (Habib)
+
+    User can request a translation
+        User wants to request a translation -(system notifies other users who know this language)
+
+_____________________________________________________
+GUI 
+    The interface language of the system is English.
+
+    System displays showcase entries on front page to guests
+
+    The front page has a warning that some entries may contain mature content or coarse language    
+
+    System shows only few entries of the full list of showcase entries on front page
+
+    User can ask to see more showcase entries
+        User wants to see more showcase entries
+
+    User can try a search
+        User wants to make a search 
+
+_____________________________________________________
+Language    
+
+    At the first stage, English, Russian and Mandarin (Simplified Chinese) are the available languages for both source language and target language.
+        
+    User can add a new language
+        User wants to add a new language (Habib)    
+
+    If a user creates an entry in a language for which the Database doesn't have a table yet the Database must create it or activate it (Habib 140704)    
+
+_____________________________________________________
+Likes   
+
+    User can like any entry
+        User wants to like an entry
+    
+    User can like another user.
+
+    User can't like himself.
+
+    User can't like his own entry
+
+    One user can like/dislike a translate entry only once a day (??)
+
+_____________________________________________________
+Logging in  
+    
+    User can log in to the system providing a valid email and password.
+        User wants to login
+
+_____________________________________________________
+Profile   
+
+    User can view his/her own profile
+        User wants to view his/her own profile (Kamlesh)
+
+    User can edit his profile
+        User wants to edit his profile
+    
+    User can view other user's profile  
+        User wants to view another user's profile (Kamlesh)
+
+_____________________________________________________
+Search  
+    
+    The user can make a search for translations in one or more TL's (target languages)
+
+    User can do a browse search
+        User wants to browse
+
+    User can do a lookup search
+        User wants to make a lookup search (Igor)
+
+    Retrieved entries are sorted chronologically 
+    
+    Retrieved entries are sorted by rating (wish_list) 
+
+    #13 system tries a search for $equiv_entries [#13]
+
+_____________________________________________________
+User
+
+    Admin can ban bad users
+        Admin wants to Ban a bad User
+
+    Admin can notify users
+        Admin wants to Notify a user 
+
+    There are four types of user status: Active, Inactive, Blocked, Deactivated
+
+    Users can report other users 
+        User wants to report another user  
+       
