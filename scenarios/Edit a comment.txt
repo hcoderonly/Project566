@@ -1,10 +1,12 @@
 (Linpei)
+v2
 
-Main function: 1. User can modifies the comments that he/she created
-			   2. User can report the comments containing the contents that do not follow the Winged Word Master term, such as offensive, floody, advertising, spam.
-
+Relevant business rules: 
+	- User can modify the comments that he/she created
+	- User can report a Bad Comment (See Final Doc, 1.03. Acronyms & References)
 
 1. Modify the comment
+
 	Pre-condition: User logged in the system.
 	trigger: User clicks the eidt button/icon on the top right corner of the comment, which is only visible on his/her own comments.
 
@@ -17,6 +19,7 @@ Main function: 1. User can modifies the comments that he/she created
 		.2 The page stays on the same page having the comment without any changes.
 
 2. Report the comment
+
 	Pre-condition: the comment contains the contents that do not follow the Winged Word Master term, such as offensive, floody, advertising, spam.
 	trigger: User clicks Report to Admin link on the top right corner of the comment, which is visible to all of the comments.
 

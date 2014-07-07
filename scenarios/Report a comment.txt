@@ -1,0 +1,21 @@
+Lily Fan
+v2
+
+2. Report the comment
+
+    Pre-condition: the comment contains the contents that do not follow the Winged Word Master term, such as offensive, floody, advertising, spam.
+    trigger: User wants to report a Bad Comment.
+
+    .1 User asks the System to report the Bad Comment.
+        .1 The system brings out a report form (list box with multiple select)
+            .1 User submits the report
+                .1 System checks the contents of the report #1
+                    .1 Report is empty
+                        .1 System loops to #1
+                    .2 Report is not empty
+                        .1 System processes the Bad Comment report #2
+                            .1 System notifies the user the admin will see the report
+                            .2 System saves the report
+                            .3 System emails the report to the admin
+            .2 User cancels
+                .1 System hides the report
