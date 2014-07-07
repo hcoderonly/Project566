@@ -1,5 +1,5 @@
 Igor 
-v7
+v8
 
 User wants to make a search
 
@@ -128,30 +128,41 @@ User wants to make a search
 
                 .2 $equiv_entry search succeeds
 
-                    .1 System displays the list of found $equiv_entry's
+                    .1 System displays the list of found $equiv_entries [#24]
 
                         .1 List has only 1 or more $unauthent's
+
                             .1 User asks to authenticate an $unauthent as a $translation [#15]
                             .2 User asks to authenticate an $unauthent as the $orig_phrase [#16]
+
                         .2 List has only 1 or more $translation's (Creator only knew it was an $translation)
+
                             .1 User asks to see the full info of a $translation [#17] 
                             .2 User asks to see the full info of the $orig_phrase [#18]
+
                         .3 List has $translation's and $unauthent's
+
                             .1 User asks to authenticate an $unauthent as an $translation [#15]
                             .2 User asks to authenticate an $unauthent as the $orig_phrase [#16]
                             .3 User asks to see the full info of a $translation [#17]
                             .4 User asks to see the full info of the $orig_phrase [#18]
                             .5 User asks to authenticate the $translation as an $orig_phrase [#19]
                                 .1 System ...
+
                         .4 List has the $orig_phrase
+
                             .1 User asks to see the full info of the $orig_phrase [#18]
                             .2 User wants to authenticate his $search_phrase as a translation of the $orig_phrase [#20]
+
                         .5 List has the $orig_phrase and $unauthent's
+
                             .1 User asks to authenticate an $unauthent as an $translation [#15]
                             .2 User asks to authenticate an $unauthent as the $orig_phrase [#16]
                             .3 User asks to see the full info of the $orig_phrase [#18]
                             .4 User wants to authenticate his $search_phrase as a translation of the $orig_phrase [#20]
+
                         .6 List has all $orig_phrase, $translation's and $unauthent's
+                        
                             .1 User asks to authenticate an $unauthent as a $translation [#15]
                             .3 User asks to authenticate an $unauthent as the $orig_phrase [#16]
                             .4 User asks to see the full info of a $translation [#17] 

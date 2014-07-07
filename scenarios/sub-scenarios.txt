@@ -1,5 +1,5 @@
 Sub-scenarios
-v8
+v9
 
 #1 system tries a search using $search_phrase, $lang_interest, $target_lang
 #2 system asks for $search_phrase [#2]
@@ -30,3 +30,4 @@ v8
     // User believes it's an error and he wants to correct it
 #22 System asks to confirm or cancel a create [#22]
 #23 System asks to pick a $retrieved_entry and link it to his $search_phrase [#23]
+#24 System displays the list of found $equiv_entries [#24]
