@@ -1,0 +1,15 @@
+v1
+
+User wants to save a comment containing a bad word (status)
+
+    .1 System does the bad word check
+
+        .1 bad word check negative
+
+            .1 System saves the comment
+            .2 System displays the saved comment
+
+        .2 bad word check positive
+
+            .1 System notifies the user
+            .2 System returns back to "create a comment"
