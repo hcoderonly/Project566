@@ -1,0 +1,25 @@
+v1 
+
+User wants to create a comment (status)
+
+    .1 User asks the system to let him create a comment
+
+        .1 System gives the user a comment form [#1]
+
+            .1 User cancels
+            .2 User asks to save the form
+
+                .1 System runs a content check
+
+                    .1 content check fails: 
+                        .1 form contains 0 chars
+                            .1 System notifies the user
+                            .2 System returns to #1
+                        .2 form contains bad words
+                            .1 System notifies the user
+                            .2 System returns to #1
+
+                    .2 content check succeeds:
+                        .1 System saves the comment
+                        .2 System shows the saved comment
+
